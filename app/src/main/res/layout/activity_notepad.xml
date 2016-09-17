@@ -17,7 +17,7 @@
         android:textStyle="bold"
         android:id="@+id/titleEditText" />
 
-    <com.spanishenglishtravelhandbook.LinedEditText
+    <com.cantoneseenglishtravelhandbook.LinedEditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"

@@ -122,9 +122,10 @@ public class activity_notepadrecycler extends AppCompatActivity {
         // if this is a new entry...
         if (_notepadData.getID().equals(-1))
         {
-            _notepadData.setID(notepadDBHelper.insertNotepadData(_notepadData.getTitle(), _notepadData.getBody(), _notepadData.getUnModifiedDate()));
-
-            notepadDataList.add(_notepadData);
+            if (!_notepadData.getTitle().trim().isEmpty() || !_notepadData.getBody().trim().isEmpty()) {
+                _notepadData.setID(notepadDBHelper.insertNotepadData(_notepadData.getTitle(), _notepadData.getBody(), _notepadData.getUnModifiedDate()));
+                notepadDataList.add(_notepadData);
+            }
         }
         // if this is an existing entry, modify it.
         else {

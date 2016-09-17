@@ -48,7 +48,7 @@ public class NotepadActivity extends AppCompatActivity {
             bodyEditText = (LinedEditText) findViewById(R.id.bodyEditText);
             titleEditText.setText(notepadData.getTitle());
             bodyEditText.setText(notepadData.getBody());
-            bodyEditText.requestFocus();
+            titleEditText.requestFocus();
             getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
     }
 
