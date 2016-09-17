@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -12,7 +19,20 @@
     <TextView
         android:text="categoryTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/categoryTextView"
-        android:layout_weight="2" />
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="24sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
 </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000"/>
+    </LinearLayout>

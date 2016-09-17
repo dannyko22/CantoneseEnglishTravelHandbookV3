@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity
         final Context context = this;
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setImageResource(R.drawable.clipboard);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
