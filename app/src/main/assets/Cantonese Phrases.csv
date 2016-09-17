@@ -1,0 +1,352 @@
+﻿1;Basics; Hello. ; 你好.; Néih hóu.;file:///android_asset/basics.png
+2;Basics; How are you? ; 你好嗎?; Néih hóu ma?;file:///android_asset/basics.png
+3;Basics; How are you recently? (''more popular in daily usage''); 近排點呀?; Gahnpàaih dím a? (''informal'');file:///android_asset/basics.png
+4;Basics; Fine. ; 好.; Hóu.;file:///android_asset/basics.png
+5;Basics; What is your name? ; 你叫乜嘢名呀?; Néih giu māt'yéh mèhng a?;file:///android_asset/basics.png
+6;Basics;" What is your name (''formal, literally means ""How do I address you""'')? "; 請問點稱呼?; Chíngmahn dím chīngfū?;file:///android_asset/basics.png
+7;Basics; My name is ______ . ; 我個名叫______.; Ngóh go méng giu ______ .;file:///android_asset/basics.png
+8;Basics; Nice to meet you. ; 幸會.; Hahng'wúih.;file:///android_asset/basics.png
+9;Basics; Please. ; 請.; Chíng.;file:///android_asset/basics.png
+10;Basics; Thank you. (''when someone helps you'') ; 唔該.; M̀h'gōi.;file:///android_asset/basics.png
+11;Basics; Thank you. (''when someone gives you a gift'') ; 多謝; Dōjeh.;file:///android_asset/basics.png
+12;Basics; You're welcome. ; 唔使客氣.; M̀h'sái haak-hei.;file:///android_asset/basics.png
+13;Basics; Excuse me. (''getting attention'') ; 唔好意思.; M̀h'hóu yisi;file:///android_asset/basics.png
+14;Basics; Excuse me. (''to get past'') ; 唔該.; M̀h'gōi;file:///android_asset/basics.png
+15;Basics; Sorry. ; 對唔住.; Deui-m̀h-jyuh.;file:///android_asset/basics.png
+16;Basics; Goodbye (''formal'') ; 再見; Joigin. ;file:///android_asset/basics.png
+17;Basics; Goodbye (''informal'') ; 拜拜; Bāaibaai.;file:///android_asset/basics.png
+18;Basics; I can't speak Cantonese. ; 我唔識講廣東話.; Ngóh m̀h'sīk góng Gwóngdōngwá.;file:///android_asset/basics.png
+19;Basics; Do you speak English? ; 你識唔識講英文呀?; Néih sīk-m̀h-sīk góng Yīngmán a?;file:///android_asset/basics.png
+20;Basics; Is there someone here who speaks English? ; 呢度有冇人識講英文呀?; nī douh yáuh móuh yàhn sīk góng Yīngmán a? ;file:///android_asset/basics.png
+21;Basics; Help! ; 救命呀!; Gau mehng ā! ;file:///android_asset/basics.png
+22;Basics; Look out! ; 小心!; Síusām! ;file:///android_asset/basics.png
+23;Basics; Good morning. ; 早晨.; Jóusàhn.;file:///android_asset/basics.png
+24;Basics; I don't understand. ; 我唔明.; Ngóh m̀h'mìhng.;file:///android_asset/basics.png
+25;Basics; Where is the toilet? ; 廁所喺邊度呀?; Chi só hái bīn douh a?;file:///android_asset/basics.png
+26;Problems; Leave me alone. ; 唔好搞我.; M̀h'hóu gáau ngóh. ;file:///android_asset/warning.png
+27;Problems; Don't touch me! ; 唔好掂我!; M̀h'hóu dihm ngóh!;file:///android_asset/warning.png
+28;Problems; I'll call the police. ; 我會叫警察.; Ngóh wúih giu gíngchaat.;file:///android_asset/warning.png
+29;Problems; Police! ; 警察!; Gíngchaat!;file:///android_asset/warning.png
+30;Problems; Stop! Thief! ; 咪走!  賊仔!;Máih jáu! Chaahkjái!;file:///android_asset/warning.png
+31;Problems; Please help me. ; 唔該幫我.; M̀h'gōi bōng ngóh.;file:///android_asset/warning.png
+32;Problems; It's an emergency. ; 好緊急.; Hóu gán'gāp.;file:///android_asset/warning.png
+33;Problems; I'm lost. ; 我蕩失路.; Ngóh dohngsāt louh.;file:///android_asset/warning.png
+34;Problems; I lost my bag. ; 我唔見咗個袋.; Ngóh m̀h'gin jó go doih.;file:///android_asset/warning.png
+35;Problems; I dropped my wallet. ; 我跌咗個銀包.; Ngóh dit jó go ngàhn bāau.;file:///android_asset/warning.png
+36;Problems; I don't feel well. ; 我唔舒服.; Ngóh m̀h syūfuhk.;file:///android_asset/warning.png
+37;Problems; I've been injured. ; 我受咗傷.; Ngóh sauh jó sēung.;file:///android_asset/warning.png
+38;Problems; Please call a doctor. ; 唔該幫我叫醫生.; M̀h'gōi bōng ngóh giu yīsāng.;file:///android_asset/warning.png
+39;Problems; Can I use your phone? ; 可唔可以借個電話用呀?; Hó-m̀h-hó'yi je go dihnwáh yuhng a?;file:///android_asset/warning.png
+40;Problems; I haven't done anything wrong. ; 我冇做錯野.; Ngóh móuh jouh cho yéh.;file:///android_asset/warning.png
+41;Problems; It was a misunderstanding. ; 件事係誤會.; Ginh sih haih ngh-wuih.;file:///android_asset/warning.png
+42;Problems; Where are you taking me? ; 你帶我去邊?; Néih daai ngóh heui bīn?;file:///android_asset/warning.png
+43;Problems; Am I under arrest? ; 我係唔係俾人拉左呀?; Ngóh haih-m̀h-haih béi yàhn lāai jó a?;file:///android_asset/warning.png
+44;Problems; I am an American/Australian/British/Canadian citizen. ; 我係 美國/澳州/英國/加拿大 公民.; Ngóh haih Méihgwok/Oujāu/Yīng'gwok/Gānàhdaaih gūngmàhn.;file:///android_asset/warning.png
+45;Problems; I want to talk to the American/Australian/British/Canadian embassy/consulate. ; 我要搵 美國/澳州/英國/加拿大 大使館/領事館.; Ngóh yiu wán Méihgwok/Oujāu/Yīng'gwok/Gānàhdaaih daaihsigún/líhngsihgún.;file:///android_asset/warning.png
+46;Problems; I want to talk to a lawyer. ; 我要搵律師.; Ngóh yiu wán leuhtsī.;file:///android_asset/warning.png
+47;Problems; Can I just pay a fine now? ; 可唔可以就咁罰錢呀?; Hó-m̀h-hó'yi jauh gám faht chín?;file:///android_asset/warning.png
+48;Numbers; 1 ; 一; yāt;file:///android_asset/numbers.png
+49;Numbers; 2 ; 二; yih;file:///android_asset/numbers.png
+50;Numbers; 3 ; 三; sāam;file:///android_asset/numbers.png
+51;Numbers; 4 ; 四; sei;file:///android_asset/numbers.png
+52;Numbers; 5 ; 五; ńgh;file:///android_asset/numbers.png
+53;Numbers; 6 ; 六; luhk;file:///android_asset/numbers.png
+54;Numbers; 7 ; 七; chāt;file:///android_asset/numbers.png
+55;Numbers; 8 ; 八; baat;file:///android_asset/numbers.png
+56;Numbers; 9 ; 九; gáu;file:///android_asset/numbers.png
+57;Numbers; 10; 十; sahp;file:///android_asset/numbers.png
+58;Numbers; 11 ; 十一; sahpyāt;file:///android_asset/numbers.png
+59;Numbers; 12 ; 十二; sahpyih;file:///android_asset/numbers.png
+60;Numbers; 13 ; 十三; sahpsāam;file:///android_asset/numbers.png
+61;Numbers; 14 ; 十四; sahpsei;file:///android_asset/numbers.png
+62;Numbers; 15 ; 十五; sahpńgh;file:///android_asset/numbers.png
+63;Numbers; 16 ; 十六; sahpluhk;file:///android_asset/numbers.png
+64;Numbers; 17 ; 十七; sahpchāt;file:///android_asset/numbers.png
+65;Numbers; 18 ; 十八; sahpbaat;file:///android_asset/numbers.png
+66;Numbers; 19 ; 十九; sahpgáu;file:///android_asset/numbers.png
+67;Numbers; 20 ; 二十; yihsahp;file:///android_asset/numbers.png
+68;Numbers; 21 ; 二十一; yihsahpyāt;file:///android_asset/numbers.png
+69;Numbers; 22 ; 二十二; yihsahpyih;file:///android_asset/numbers.png
+70;Numbers; 23 ; 二十三; yihsahpsāam;file:///android_asset/numbers.png
+71;Numbers; 30 ; 三十; sāamsahp ;file:///android_asset/numbers.png
+72;Numbers; 40 ; 四十; seisahp ;file:///android_asset/numbers.png
+73;Numbers; 50 ; 五十; ńghsahp ;file:///android_asset/numbers.png
+74;Numbers; 60 ; 六十; luhksahp ;file:///android_asset/numbers.png
+75;Numbers; 70 ; 七十; chātsahp ;file:///android_asset/numbers.png
+76;Numbers; 80 ; 八十; baatsahp ;file:///android_asset/numbers.png
+77;Numbers; 90 ; 九十; gáusahp ;file:///android_asset/numbers.png
+78;Numbers; 100 ; 一百; yātbaak;file:///android_asset/numbers.png
+79;Numbers; 200 ; 二百; yihbaak;file:///android_asset/numbers.png
+80;Numbers; 300 ; 三百; sāambaak;file:///android_asset/numbers.png
+81;Numbers; 1000 ; 一千; yātchīn;file:///android_asset/numbers.png
+82;Numbers; 2000 ; 二千; yihchīn;file:///android_asset/numbers.png
+83;Numbers;" 10,000 "; 一萬; yātmaahn;file:///android_asset/numbers.png
+84;Numbers;" 100,000 "; 十萬; sahpmaahn;file:///android_asset/numbers.png
+85;Numbers;" 1,000,000 "; 一百萬; yātbaakmaahn;file:///android_asset/numbers.png
+86;Numbers;" 10,000,000 "; 一千萬; yātchīnmaahn;file:///android_asset/numbers.png
+87;Numbers;" 100,000,000 "; 一億; yātyīk;file:///android_asset/numbers.png
+88;Numbers;" 1,000,000,000 "; 十億; sahpyīk;file:///android_asset/numbers.png
+89;Numbers;" 10,000,000,000 "; 一百億; yātbaakyīk;file:///android_asset/numbers.png
+90;Numbers;" 100,000,000,000 "; 一千億; yātchīnyīk;file:///android_asset/numbers.png
+91;Numbers;" 1,000,000,000,000 "; 一兆; yātsiuh;file:///android_asset/numbers.png
+92;Numbers;" number _____ (train, bus, etc.) "; _____號; houh;file:///android_asset/numbers.png
+93;Numbers; half ; 半; bun;file:///android_asset/numbers.png
+94;Numbers; less ; 小; síu;file:///android_asset/numbers.png
+95;Numbers; more ; 多; dō;file:///android_asset/numbers.png
+96;Time; now ; 而家; yīgā;file:///android_asset/time.png
+97;Time; late ; 遲; chìh;file:///android_asset/time.png
+98;Time; early ; 早; jóu;file:///android_asset/time.png
+99;Time; morning ; 朝早 ;jīujóu;file:///android_asset/time.png
+100;Time; afternoon ; 晏晝; ngaanjau;file:///android_asset/time.png
+101;Time; evening ; 夜晚; yeh máahn;file:///android_asset/time.png
+102;Time; one o'clock ; 一點; yāt dím;file:///android_asset/time.png
+103;Time; two o'clock ; 兩點; léuhng dím;file:///android_asset/time.png
+104;Time; two five ; 兩點一 / 兩點踏一 ;léuhng dím yāt/léuhng dím daahp yāt;file:///android_asset/time.png
+105;Time; two ten ; 兩點二 / 兩點踏二 ;léuhng dím yih/léuhng dím daahp yih;file:///android_asset/time.png
+106;Time; two fifteen/Quarter past two ; 兩點三 / 兩點踏三 ;léuhng dím sāam/léuhng dím daahp sāam;file:///android_asset/time.png
+107;Time; two thirty/Half past two ; 兩點'''半'''; léuhng dím '''bun''';file:///android_asset/time.png
+108;Time; two forty-five/Quarter to three ; 兩點九 / 兩點踏九; léuhng dím gáu/léuhng dím daahp gáu;file:///android_asset/time.png
+109;Time; two fifty ; 兩點十 / 兩點踏十 ;léuhng dím sahp/léuhng dím daahp sahp;file:///android_asset/time.png
+110;Time; two fifty-five ; 兩點踏十一; léuhng dím daahp sahpyāt;file:///android_asset/time.png
+111;Time; two fifty-seven ; 兩點五十七分; léuhng dím ńghsahpchāt fān;file:///android_asset/time.png
+112;Time; _____ minute(s) ; _____ 分鐘; fānjūng;file:///android_asset/time.png
+113;Time; _____ hour(s) ; _____ 個鐘; gor jūng;file:///android_asset/time.png
+114;Time; _____ day(s) ; _____ 日 ;yaht;file:///android_asset/time.png
+115;Time; _____ week(s) ; _____ 個禮拜; gor láihbaai;file:///android_asset/time.png
+116;Time; _____ month(s) ; _____ 個月; gor yuht;file:///android_asset/time.png
+117;Time; _____ year(s) ; _____ 年 ;nìhn;file:///android_asset/time.png
+118;Time; today ; 今日; gām'yaht;file:///android_asset/time.png
+119;Time; yesterday ; 尋日; chàhm'yaht;file:///android_asset/time.png
+120;Time; tomorrow ; 聽日; tīngyaht;file:///android_asset/time.png
+121;Time; the day before last ; 前日; chìhnyaht;file:///android_asset/time.png
+122;Time; the day after tomorrow ; 後日; hauh'yaht;file:///android_asset/time.png
+123;Time; this week ; 今個禮拜; gām go láihbaai;file:///android_asset/time.png
+124;Time; last week ; 上個禮拜; seuhng go láihbaai;file:///android_asset/time.png
+125;Time; next week ; 下個禮拜; hah go láihbaai;file:///android_asset/time.png
+126;Time; Sunday ; 禮拜日 / 星期日; láihbaai yaht /  sing1 kei4 yaht ;file:///android_asset/time.png
+127;Time; Monday ; 禮拜一 / 星期一; láihbaai yāt / sing1 kei4 yāt;file:///android_asset/time.png
+128;Time; Tuesday ; 禮拜二 / 星期二; láihbaai yih / sing1 kei4 yih;file:///android_asset/time.png
+129;Time; Wednesday ; 禮拜三 / 星期三 ; láihbaai sāam / sing1 kei4 sāam;file:///android_asset/time.png
+130;Time; Thursday ; 禮拜四 / 星期四; láihbaai sei / sing1 kei4 sei;file:///android_asset/time.png
+131;Time; Friday ; 禮拜五 / 星期五; láihbaai ńgh / sing1 kei4 ńgh;file:///android_asset/time.png
+132;Time; Saturday ; 禮拜六 / 星期六; láihbaai luhk /  sing1 kei4 luhk;file:///android_asset/time.png
+133;Time; January ; 一月; yāt'yuht;file:///android_asset/time.png
+134;Time; February ; 二月; yih'yuht;file:///android_asset/time.png
+135;Time; March ; 三月; sāam'yuht;file:///android_asset/time.png
+136;Time; April ; 四月; seiyuht;file:///android_asset/time.png
+137;Time; May ; 五月; ńgh'yuht;file:///android_asset/time.png
+138;Time; June ; 六月; luhk'yuht;file:///android_asset/time.png
+139;Time; July ; 七月; chāt'yuht;file:///android_asset/time.png
+140;Time; August ; 八月; baat'yuht;file:///android_asset/time.png
+141;Time; September ; 九月; gáuyuht;file:///android_asset/time.png
+142;Time; October ; 十月; sahpyuht;file:///android_asset/time.png
+143;Time; November ; 十一月; sahpyāt'yuht;file:///android_asset/time.png
+144;Time; December ; 十二月; sahpyih'yuht;file:///android_asset/time.png
+145;Colors;black ; 黑色; hāk sīk;file:///android_asset/colors.png
+146;Colors;white ; 白色; baahk sīk;file:///android_asset/colors.png
+147;Colors;gray ; 灰色; fūi sīk;file:///android_asset/colors.png
+148;Colors;red ; 紅色; hùhng sīk;file:///android_asset/colors.png
+149;Colors;blue ; 藍色; làahm̀ sīk;file:///android_asset/colors.png
+150;Colors;yellow ; 黃色; wòhng sīk;file:///android_asset/colors.png
+151;Colors;green ; 綠色; luhk sīk;file:///android_asset/colors.png
+152;Colors;orange ; 橙色; chàahng sīk;file:///android_asset/colors.png
+153;Colors;purple ; 紫色; jí sīk;file:///android_asset/colors.png
+154;Colors;brown ; 啡色; fē sīk;file:///android_asset/colors.png
+155;Colors;pink ; 粉紅色; fán hùhng sīk;file:///android_asset/colors.png
+156;Getting Around; How much is a ticket ? ; 去_____張飛要幾多錢嘎?; Heui Yāt jēung fēi yiu géidō chín gah?;file:///android_asset/getting_around.png
+157;Getting Around;" One ticket to _____, please. ";" 一張飛去_____,  唔該.";" Yāt jēung fēi heui _____, m̀h'gōi.";file:///android_asset/getting_around.png
+158;Getting Around; Where does this train/bus go? ; 呢 [班火車]/[架巴士] 去邊度嘎?; Nī [bāan fóchē]/[ga bāsí] heui bīn?;file:///android_asset/getting_around.png
+159;Getting Around; Where is the train/bus to _____? ; 去_____ [班火車]/[架巴士] 喺邊度搭嘎?; Heui _____ [bāan fóchē]/[ga bāsí] hái bīndouh daap gah?;file:///android_asset/getting_around.png
+160;Getting Around; Does this train/bus stop in _____? ; 呢[班火車]/[架巴士]停唔停_____嘎?; Nī [bāan fóchē]/[ga bāsí] tìhng-m̀h- tìhng _____ gah? ;file:///android_asset/getting_around.png
+161;Getting Around; When does the train/bus for _____ leave? ; 去_____[班火車/架巴士]幾點走嘎?; Heui _____ [bāan fóchē]/[ga bāsí] géidím jáu gah?;file:///android_asset/getting_around.png
+162;Getting Around; When will this train/bus arrive in _____? ; [班火車]/[架巴士]會幾點去到_____嘎?; [Bāan fóchē]/[Ga bāsí] wúih géidím heuidou _____ gah?;file:///android_asset/getting_around.png
+163;Getting Around; Taxi! ; 的士!; Dīk-síh!;file:///android_asset/getting_around.png
+164;Getting Around;" Take me to _____, please. ";" 載我去_____,  唔該.";" Joi ngóh heui _____, m̀h'gōi.";file:///android_asset/getting_around.png
+165;Getting Around; How much does it cost to get to _____? ; 去_____要幾多錢嘎?; Heui _____ yiu géidō chín gah?;file:///android_asset/getting_around.png
+166;Getting Around;" Take me there, please. ";" 載我去嗰度,  唔該. ";"Joi ngóh heui gódouh, m̀h'gōi";file:///android_asset/getting_around.png
+167;Getting Around; How do I get to _____ ? ; 我可以點去_____呀?; Ngóh hó'yi dím heui _____ a?;file:///android_asset/getting_around.png
+168;Getting Around; the train station ; 火車站; fóchē jaahm;file:///android_asset/getting_around.png
+169;Getting Around; the bus station? ; 巴士站; bāsí jaahm;file:///android_asset/getting_around.png
+170;Getting Around; the airport? ; 機場; gēichèuhng;file:///android_asset/getting_around.png
+171;Getting Around; downtown? ; 市區; síh'kēui;file:///android_asset/getting_around.png
+172;Getting Around; the youth hostel? ; 青年旅舍; chīngnìhn léuihséh;file:///android_asset/getting_around.png
+173;Getting Around; the _____ hotel? ; _____ 酒店; _____ jáudim;file:///android_asset/getting_around.png
+174;Getting Around; the American/Canadian/Australian/British consulate ; 美國/加拿大/澳州/英國 領事館?; Méihgwok/Gānàhdaaih/Oujāu/Yīng'gwok líhngsihgún;file:///android_asset/getting_around.png
+175;Getting Around; Where are there a lot of_____ ? ; 邊度可以搵到好多_____呀?; Bīndouh hó'yi wándou hóudō _____ a?;file:///android_asset/getting_around.png
+176;Getting Around; restaurants ; 餐廳; chāantēng;file:///android_asset/getting_around.png
+177;Getting Around; bars ; 酒吧; jáubā;file:///android_asset/getting_around.png
+178;Getting Around; sites to see ; 景點; gíngdím;file:///android_asset/getting_around.png
+179;Getting Around; Can you show me on the map? ; 可唔可以喺張地圖度指俾我睇呀?; Hó-m̀h-hó'yi hái jēung deihtòuh douh jí béi ngóh tái a?;file:///android_asset/getting_around.png
+180;Getting Around; street ; 街; gāai;file:///android_asset/getting_around.png
+181;Getting Around; Turn left. ; 轉左; Jyun jó.;file:///android_asset/getting_around.png
+182;Getting Around; Turn right. ; 轉右; Jyun yauh.;file:///android_asset/getting_around.png
+183;Getting Around; left ; 左; jó;file:///android_asset/getting_around.png
+184;Getting Around; right ; 右; yauh;file:///android_asset/getting_around.png
+185;Getting Around; straight ahead ; 直行; jihk'hàahng;file:///android_asset/getting_around.png
+186;Getting Around; towards the _____ ; 去_____; heui _____;file:///android_asset/getting_around.png
+187;Getting Around; past the _____ ; 過咗; _____ gwojó _____;file:///android_asset/getting_around.png
+188;Getting Around; before the _____ ; _____之前; jīchìhn;file:///android_asset/getting_around.png
+189;Getting Around; Watch for the _____. ; 睇住_____.; Táijyuh _____.;file:///android_asset/getting_around.png
+190;Getting Around; intersection ; 十字路口; sahpjihlouh'háu;file:///android_asset/getting_around.png
+191;Getting Around; north ; 北面; bākmihn;file:///android_asset/getting_around.png
+192;Getting Around; south ; 南面; nàahm'mihn;file:///android_asset/getting_around.png
+193;Getting Around; east ; 東面; dūngmihn;file:///android_asset/getting_around.png
+194;Getting Around; west ; 西面; sāimihn;file:///android_asset/getting_around.png
+195;Getting Around; uphill ; 上山; séuhngsāan;file:///android_asset/getting_around.png
+196;Getting Around; downhill ; 落山; lohksāan;file:///android_asset/getting_around.png
+197;Hotel; Do you have any rooms available? ; 你哋有冇空房呀?; Néihdeih yáuh-móuh hūngfóng a?;file:///android_asset/hotel.png
+198;Hotel; How much is a room for one person/two people? ; 單人房/雙人房 要幾多錢呀?; Dāanyàhnfóng/Sēungyàhnfóng yiu géidō chín a?;file:///android_asset/hotel.png
+199;Hotel; Does the room come with _____? ; 間房有冇_____嘎?; Gāan fóng yáuh-móuh _____ gah?;file:///android_asset/hotel.png
+200;Hotel; bedsheets ; 床襟; chòhngkám;file:///android_asset/hotel.png
+201;Hotel; a bathroom ; 浴室; yuhksāt;file:///android_asset/hotel.png
+202;Hotel; a telephone ; 電話; dihnwah;file:///android_asset/hotel.png
+203;Hotel; a TV ; 電視; dihnsih;file:///android_asset/hotel.png
+204;Hotel; May I see the room first? ; 可唔可以睇下間房先呀?; Hó-m̀h-hó'yi tái-háh gāan fóng sīn a?;file:///android_asset/hotel.png
+205;Hotel; Do you have anything _____? ; 有冇間房會_____嘎?; Yáuh-móuh gāan fóng húi _____ gah?;file:///android_asset/hotel.png
+206;Hotel; quieter ; 靜啲; jihngdī;file:///android_asset/hotel.png
+207;Hotel; bigger ; 大啲; daaihdī;file:///android_asset/hotel.png
+208;Hotel; cleaner ; 乾淨啲; gōnjehngdī;file:///android_asset/hotel.png
+209;Hotel; cheaper ; 平啲; pèhngdī;file:///android_asset/hotel.png
+210;Hotel;" OK, I'll take it. ";" 好,  我要呢間.";" Hóu, ngóh yiu nī gāan.";file:///android_asset/hotel.png
+211;Hotel; I will stay for _____ night(s). ; 我會喺度住_____晚.; Ngóh húi háidouh jyuh _____ máahn.;file:///android_asset/hotel.png
+212;Hotel; Can you suggest another hotel? ; 你可唔可以介紹第二間酒店俾我呀?; Néih hó-m̀h-hó'yi gaaisiuh daihyih gāan jáudim béi ngóh a?;file:///android_asset/hotel.png
+213;Hotel; Do you have a _____?; 你哋有冇_____嘎?; Néihdeih yáuh-móuh _____ gah?;file:///android_asset/hotel.png
+214;Hotel; safe ; 夾萬; gaapmaahn;file:///android_asset/hotel.png
+215;Hotel; lockers ; 儲物櫃; chyúhmahtgwaih;file:///android_asset/hotel.png
+216;Hotel; Is breakfast/supper included? ; 包唔包 早餐/晚餐 嘎?; Bāau-m̀h-bāau jóuchāan/máahnchāan gah?;file:///android_asset/hotel.png
+217;Hotel; What time is breakfast/supper? ; 幾點有 早餐/晚餐 嘎? ;Géidím yáuh jóuchāan/máahnchāan gah?;file:///android_asset/hotel.png
+218;Hotel; Please clean my room. ; 唔該幫我執下間房.; M̀h'gōi bōng ngóh jāp-háh gāan fóng.;file:///android_asset/hotel.png
+219;Hotel; Can you wake me at _____? ; 可唔可以_____叫醒我呀?; Hó-m̀h-hó'yi _____ giuséng ngóh a?;file:///android_asset/hotel.png
+220;Hotel; I want to check out. ; 我想退房.; Ngóh séung teuifóng.;file:///android_asset/hotel.png
+221;Money; Do you accept American/Australian/Canadian dollars? ; 你哋收唔收 美/澳/加 元嘎?; Néihdeih sāu-m̀h-sāu Méih/Ou/Gā yùhn gah?;file:///android_asset/money.png
+222;Money; Do you accept British pounds? ; 你哋收唔收英鎊嘎?; Néihdeih sāu-m̀h-sāu Yīngbohng gah?;file:///android_asset/money.png
+223;Money; Do you accept credit cards? ; 你哋收唔收信用卡嘎?; Néihdeih sāu-m̀h-sāu sun-yoong-caht gah?;file:///android_asset/money.png
+224;Money; Can you change money for me? ; 可唔可以幫我唱錢呀?; Hó-m̀h-hó'yi bōng ngóh cheung chín a?;file:///android_asset/money.png
+225;Money; Where can I get money changed? ; 我可以去邊度唱錢呀?; Ngóh hó'yi heui bīndouh cheung chín a?;file:///android_asset/money.png
+226;Money; Can you change a traveler's check for me? ; 可唔可以幫我唱張旅行支票呀?; Hó-m̀h-hó'yi bōng ngóh cheung jēung léuih'hàhng jīpiu a?;file:///android_asset/money.png
+227;Money; Where can I get a traveler's check changed? ; 我可以去邊度唱張旅行支票呀?; Ngóh hó'yi heui bīndouh cheung jēung léuih'hàhng jīpiu a?;file:///android_asset/money.png
+228;Money; What is the exchange rate? ; 匯率係幾多呀?; Wuihléut haih géidō a?;file:///android_asset/money.png
+229;Money; Where is an automatic teller machine (ATM)? ; 邊度有櫃員機呀?; Bīndouh yáuh gwai'hyùhn'gēi a?;file:///android_asset/money.png
+230;Restaurant;Fried;煎;jīn;file:///android_asset/restaurant.png
+231;Restaurant;Stir-Fried;炒;cháau;file:///android_asset/restaurant.png
+232;Restaurant;Boiled;煮;jyú;file:///android_asset/restaurant.png
+233;Restaurant;Deep-fried;炸;ja;file:///android_asset/restaurant.png
+234;Restaurant;Simmered;炆;mān;file:///android_asset/restaurant.png
+235;Restaurant;Stewed;燉;dahn;file:///android_asset/restaurant.png
+236;Restaurant;Baked;焗;guhk;file:///android_asset/restaurant.png
+237;Restaurant;Steamed;蒸;jīng;file:///android_asset/restaurant.png
+238;Restaurant;" A table for one person/two people, please. ";" 一張 一人枱/二人枱, 唔該. ";"Yāt jēung yātyàhntói/yihyàhntói, m̀h'gōi.";file:///android_asset/restaurant.png
+239;Restaurant;" Can I look at the menu, please? ";" 俾張餐牌我睇, 唔該.";" Béi jēung chāanpáai ngóh tái, m̀h'gōi.";file:///android_asset/restaurant.png
+240;Restaurant; Can I look in the kitchen? ; 可唔可以睇吓個廚房呀?; Hó-m̀h-hó'yi tái-háh gō chyùhfóng a?;file:///android_asset/restaurant.png
+241;Restaurant; Is there a house specialty? ; 有乜嘢嘢食出名嘎?; Yáuh mātyéh yéhsihk chēutméng gah?;file:///android_asset/restaurant.png
+242;Restaurant; Is there a local specialty? ; 有冇本地嘢食嘎?; Yáuh-móuh búndeih yéhsihk gah?;file:///android_asset/restaurant.png
+243;Restaurant; I'm a vegetarian. ; 我食素.; Ngóh sihk sou.;file:///android_asset/restaurant.png
+244;Restaurant; I don't eat pork. ; 我唔食豬.; Ngóh m̀h'sihk jyū.;file:///android_asset/restaurant.png
+245;Restaurant; I don't eat beef. ; 我唔食牛.; Ngóh m̀h'sihk ngàuh.;file:///android_asset/restaurant.png
+246;Restaurant; I only eat halal food. ; 我淨係食清真嘢.; Ngóh jihnghaih sihk chīngjān yéh.;file:///android_asset/restaurant.png
+247;Restaurant;" Can you make it ""lite"", please? ";" 嘢食清啲, 唔該.";" yéhsihk chīngdī, m̀h'gōi.";file:///android_asset/restaurant.png
+248;Restaurant; fixed-price meal ; 套餐; touchāan;file:///android_asset/restaurant.png
+249;Restaurant; a la carte ; 跟餐牌;" gān chāanpáai (''means ""as on the menu""'')";file:///android_asset/restaurant.png
+250;Restaurant; breakfast ; 早餐; jóuchāan;file:///android_asset/restaurant.png
+251;Restaurant; lunch ; 晏; aan;file:///android_asset/restaurant.png
+252;Restaurant; lunch ;午餐; ńghchāan;file:///android_asset/restaurant.png
+253;Restaurant; tea (''meal'') ; 下午茶; hah-ńgh-chàh;file:///android_asset/restaurant.png
+254;Restaurant; supper ; 晚餐; máahnchāan;file:///android_asset/restaurant.png
+255;Restaurant; I want _____. ; 我想要_____.; Ngóh séung yiu _____.;file:///android_asset/restaurant.png
+256;Restaurant; I want a dish containing _____. ; 我想要樣有_____.; Ngóh séung yiu yeuhng yáuh _____.;file:///android_asset/restaurant.png
+257;Restaurant; chicken ; 雞; gāi;file:///android_asset/restaurant.png
+258;Restaurant; beef ; 牛; ngàuh;file:///android_asset/restaurant.png
+259;Restaurant; fish ; 魚; yùh;file:///android_asset/restaurant.png
+260;Restaurant; ham ; 火腿; fótéui;file:///android_asset/restaurant.png
+261;Restaurant; sausage ; 香腸; hēungchéuhng;file:///android_asset/restaurant.png
+262;Restaurant; cheese ; 芝士; jīsí;file:///android_asset/restaurant.png
+263;Restaurant; eggs ; 蛋; dáan;file:///android_asset/restaurant.png
+264;Restaurant; salad ; 沙律; sāléut;file:///android_asset/restaurant.png
+265;Restaurant; (fresh) vegetables ; (新鮮)蔬菜; (sānsīn) sōchoi;file:///android_asset/restaurant.png
+266;Restaurant; (fresh) fruit ; (新鮮)生果; (sānsīn) sāang'gwó;file:///android_asset/restaurant.png
+267;Restaurant; bread ; 麵包; mihnbāau;file:///android_asset/restaurant.png
+268;Restaurant; toast ; 多士; dōsí;file:///android_asset/restaurant.png
+269;Restaurant; noodles ; 麵; mihn;file:///android_asset/restaurant.png
+270;Restaurant; rice ; 飯; faahn;file:///android_asset/restaurant.png
+271;Restaurant; beans ; 豆; dáu;file:///android_asset/restaurant.png
+272;Restaurant; May I have a glass/cup of _____? ; 可唔可以俾杯_____我呀?; Hó-m̀h-hó'yi béi būi _____ ngóh a?;file:///android_asset/restaurant.png
+273;Restaurant; May I have a bottle of _____? ; 可唔可以俾樽_____我呀?; Hó-m̀h-hó'yi béi jēun _____ ngóh a?;file:///android_asset/restaurant.png
+274;Restaurant; coffee ; 咖啡; gafē;file:///android_asset/restaurant.png
+275;Restaurant; tea (''drink'') ; 茶; chàh;file:///android_asset/restaurant.png
+276;Restaurant; juice ; 果汁; gwójāp;file:///android_asset/restaurant.png
+277;Restaurant; bubbly water ; 有氣水; yáuh'hei séui;file:///android_asset/restaurant.png
+278;Restaurant; water ; 水; séui;file:///android_asset/restaurant.png
+279;Restaurant; beer ; 啤酒; bējáu;file:///android_asset/restaurant.png
+280;Restaurant; red/white wine ; 紅/白 酒; hùhng/baahk jáu;file:///android_asset/restaurant.png
+281;Restaurant; May I have some _____? ; 可唔可以俾啲_____我呀?; Hó-m̀h-hó'yi béi dī _____ ngóh a?;file:///android_asset/restaurant.png
+282;Restaurant; salt ; 鹽; yìhm;file:///android_asset/restaurant.png
+283;Restaurant; black pepper ; 黑椒; hākjīu;file:///android_asset/restaurant.png
+284;Restaurant; butter ; 牛油; ngàuhyàuh;file:///android_asset/restaurant.png
+285;Restaurant;" Excuse me, waiter? (''getting attention of server'')"; 侍應唔該.; Sihying m̀h'gōi.;file:///android_asset/restaurant.png
+286;Restaurant; I'm finished. ; 食完嘅喇.; Sihkyùhn gela.;file:///android_asset/restaurant.png
+287;Restaurant; It was delicious. ; 好食.; Hóusihk;file:///android_asset/restaurant.png
+288;Restaurant; Please clear the plates. ; 唔該幫我清下張枱.; M̀h' gōi bōng ngóh chīng-háh jēung tói.;file:///android_asset/restaurant.png
+289;Restaurant;" The check, please. ";" 埋單, 唔該.";" Màaihdāan, m̀h'gōi.";file:///android_asset/restaurant.png
+290;Bar; Do you serve alcohol? ; 你哋有冇酒飲嘎?; Néihdeih yáuh-móuh jáu yám gah?;file:///android_asset/bar.png
+291;Bar; Is there table service? ; 有冇侍應埋枱嘎?; Yáuh-móuh sihying màai tói gah?;file:///android_asset/bar.png
+292;Bar;" A beer/two beers, please. ";" 一/兩杯 啤酒, 唔該.";" Yāt/léuhng būi bējáu, m̀h'gōi.";file:///android_asset/bar.png
+293;Bar;" A glass of red/white wine, please. ";" 一杯 紅/白 酒, 唔該. ";"Yāt būi hùhng/baahk jáu, m̀h'gōi.";file:///android_asset/bar.png
+294;Bar;" A pint, please. ";" 一 pint, 唔該.";" Yāt ''pint'', m̀h'gōi.";file:///android_asset/bar.png
+295;Bar;" A bottle, please. ";" 一樽, 唔該. ";"Yāt jēun, m̀h'gōi.";file:///android_asset/bar.png
+296;Bar;" _____ (''hard liquor'') and _____ (''mixer''), please. ";" _____同_____, 唔該.";" _____ tùhng _____, m̀h'gōi.";file:///android_asset/bar.png
+297;Bar; whiskey ; 威士忌; wāisigéi;file:///android_asset/bar.png
+298;Bar; vodka ; 伏特加; fuhkdahkgā;file:///android_asset/bar.png
+299;Bar; rum ; 冧酒; lāmjáu;file:///android_asset/bar.png
+300;Bar; water ; 水; séui;file:///android_asset/bar.png
+301;Bar; club soda ; 梳打水; sōdá séui;file:///android_asset/bar.png
+302;Bar; tonic water ; 湯力水; tōnglihk séui;file:///android_asset/bar.png
+303;Bar; orange juice ; 橙汁; cháangjāp;file:///android_asset/bar.png
+304;Bar; Coke (''soda'') ; 可樂; hólohk;file:///android_asset/bar.png
+305;Bar; Do you have any bar snacks? ; 你哋有冇小食嘎?; Néihdeih yáuh-móuh síusihk gah?;file:///android_asset/bar.png
+306;Bar;" One more (cup/bottle), please. ";" 要多一 杯/樽, 唔該.";" Yiu dō yāt būi/jēun, m̀h'gōi.";file:///android_asset/bar.png
+307;Bar; When is closing time? ; 幾點柵門嘎?; Géidím sāanmùhn gaa?;file:///android_asset/bar.png
+308;Bar; Cheers! ; 飲杯!; Yámbūi!;file:///android_asset/bar.png
+309;Shopping; Do you have this in my size? ; 呢件有冇我個碼呀?; Nī gihn yáuh-móuh ngóh go má a?;file:///android_asset/shopping.png
+310;Shopping; How much? ; 幾多錢呀?; Géidō chín a?;file:///android_asset/shopping.png
+311;Shopping; That's too expensive. ; 太貴啦.; Taai gwai la.;file:///android_asset/shopping.png
+312;Shopping; Would you take _____? ; 收唔收_____嘎?; Sāu-m̀h-sāu _____ gah?;file:///android_asset/shopping.png
+313;Shopping; expensive ; 貴; gwai;file:///android_asset/shopping.png
+314;Shopping; cheap ; 平; pèhng;file:///android_asset/shopping.png
+315;Shopping; I can't afford it. ; 我俾唔起.; Ngóh béi m̀h héi.;file:///android_asset/shopping.png
+316;Shopping; I don't want it. ; 我唔想要.; Ngóh m̀h séung yiu.;file:///android_asset/shopping.png
+317;Shopping; You're cheating me. ; 你呃緊我嘅.; Néih āk gán ngóh gé.;file:///android_asset/shopping.png
+318;Shopping; I'm not interested. ; 我冇興趣.; Ngóh móuh hing cheui.;file:///android_asset/shopping.png
+319;Shopping;" OK, I'll take it. ";" 好, 我要呢件.";" Hóu, ngóh yiu nī gihn.";file:///android_asset/shopping.png
+320;Shopping; Can I have a bag? ; 可唔可以俾個袋我呀?; Hó-m̀h-hó'yi béi go dói ngóh a?;file:///android_asset/shopping.png
+321;Shopping; Do you ship (overseas)? ; 你哋送唔送貨(去外國)嘎?; Néihdeih sung-m̀h-sung fo (heui ngoihgwok) gah?;file:///android_asset/shopping.png
+322;Shopping; I need... ; 我要...; Ngóh yiu…;file:///android_asset/shopping.png
+323;Shopping; ...toothpaste. ; ...牙膏.; ngàh gōu.;file:///android_asset/shopping.png
+324;Shopping; ...a toothbrush. ; ...牙刷.; ngàh chaat.;file:///android_asset/shopping.png
+325;Shopping; ...tampons. ; ...衛生巾.; waihsāng'gān.;file:///android_asset/shopping.png
+326;Shopping; ...soap. ; ...番挸.; fāan'gáan.;file:///android_asset/shopping.png
+327;Shopping; ...shampoo. ; ...洗頭水.; sái'tàuhséui.;file:///android_asset/shopping.png
+328;Shopping;" ...pain reliever. (''e.g., aspirin or ibuprofen'') "; ...止痛藥.; jí'tung yeuhk.;file:///android_asset/shopping.png
+329;Shopping; ...cold medicine. ; ...感冒藥.; gám'mouh yeuhk.;file:///android_asset/shopping.png
+330;Shopping; ...stomach medicine. ; ...胃藥.; waih yeuhk.;file:///android_asset/shopping.png
+331;Shopping; ...a razor. ; ...剃鬚刀.; taisōudōu.;file:///android_asset/shopping.png
+332;Shopping; ...an umbrella. ; ...遮.; jē.;file:///android_asset/shopping.png
+333;Shopping; ...sunblock lotion. ; ...太陽油.; taaiyèuhngyàuh.;file:///android_asset/shopping.png
+334;Shopping; ...a postcard. ; ...名信片.; mìhngseunpín.;file:///android_asset/shopping.png
+335;Shopping; ...postage stamps. ; ...郵票.; yàuhpiu.;file:///android_asset/shopping.png
+336;Shopping; ...batteries. ; ...電池.; dihnchìh.;file:///android_asset/shopping.png
+337;Shopping; ...writing paper. ; ...信紙.; seunjí.;file:///android_asset/shopping.png
+338;Shopping; ...a pen. ; ...筆.; bāt.;file:///android_asset/shopping.png
+339;Shopping; ...English-language books. ; ...英文書.; Yīngmàhn syū.;file:///android_asset/shopping.png
+340;Shopping; ...English-language magazines. ; ...英文雜誌.; Yīngmàhn jaahpji.;file:///android_asset/shopping.png
+341;Shopping; ...an English-language newspaper. ; ...英文報紙.; Yīngmàhn boují.;file:///android_asset/shopping.png
+342;Shopping; ...an English-English dictionary. ; ...英英字典.; Yīngyīng jihdín.;file:///android_asset/shopping.png
+343;Getting Around; I want to rent a car. ; 我想租車.; Ngóh séung jōu chē.;file:///android_asset/getting_around.png
+344;Getting Around; Can I get insurance? ; 邊度可以買保險嘎?; Bīndouh hó'yi máaih bóu hím gah?;file:///android_asset/getting_around.png
+345;Getting Around; stop (''on a street sign'') ; 停; tìhng;file:///android_asset/getting_around.png
+346;Getting Around; one way ; 單程路; dāanchìhnglouh;file:///android_asset/getting_around.png
+347;Getting Around; yield ; 讓; yeuhng;file:///android_asset/getting_around.png
+348;Getting Around; no parking ; 不准泊車; bātjéun paakchē;file:///android_asset/getting_around.png
+349;Getting Around; speed limit ; 速度限制; chūkdouh haahnjai;file:///android_asset/getting_around.png
+350;Getting Around; gas (''petrol'') station ; 油站; yàuhjaahm;file:///android_asset/getting_around.png
+351;Getting Around; petrol ; 汽油; heiyàuh;file:///android_asset/getting_around.png
+352;Getting Around; diesel ; 柴油; chàaihyàuh;file:///android_asset/getting_around.png

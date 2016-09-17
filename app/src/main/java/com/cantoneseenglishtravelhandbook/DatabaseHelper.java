@@ -258,7 +258,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 travelCategoryData = new TravelCategoryData();
                 travelCategoryData.setID(id);
                 travelCategoryData.setCategory(cursor.getString(1));
-                travelCategoryData.setFilename(cursor.getString(4));
+                travelCategoryData.setFilename(cursor.getString(5));
                 // Adding contact to list
                 items.add(travelCategoryData);
             } while (cursor.moveToNext());
