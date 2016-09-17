@@ -25,7 +25,7 @@ import java.util.Date;
 public class NotepadDatabaseHelper extends SQLiteOpenHelper {
 
     //The Android's default system path of your application database.
-    private static String DB_PATH = "/data/data/com.spanishenglishtravelhandbook/databases/";
+    private static String DB_PATH = "/data/data/com.cantoneseenglishtravelhandbook/databases/";
 
     private static String DB_NAME = "notepad.db";
 
