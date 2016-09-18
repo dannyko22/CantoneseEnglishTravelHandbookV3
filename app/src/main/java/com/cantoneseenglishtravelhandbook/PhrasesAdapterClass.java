@@ -58,7 +58,7 @@ public class PhrasesAdapterClass extends ArrayAdapter {
             @Override
             public void onClick(View view) {
 
-                // this code is to go back up the hierarchy of phrases_row such that we find the listview so that we can get the position index of where the user clicked.
+                // this code is to go back up the hierarchy of phrases_row.xml such that we find the listview so that we can get the position index of where the user clicked.
                 View parentLinearLayout = ((View) view.getParent());
                 LinearLayout parentLinearview = ((LinearLayout) parentLinearLayout.getParent());
                 ListView parentparentListview = ((ListView) parentLinearview.getParent());
@@ -67,10 +67,8 @@ public class PhrasesAdapterClass extends ArrayAdapter {
 
                 String phrase = travelPhraseData.get(position).getTravelPhrase() + "\n" + travelPhraseData.get(position).getHomePhrase() + "\n" + travelPhraseData.get(position).getPronounciation();
                 Toast.makeText(context, "Copied to Notepad" + "\n" + phrase, Toast.LENGTH_SHORT).show();
-//                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(CLIPBOARD_SERVICE);
-//                ClipData clip = ClipData.newPlainText("label", phrase);
-//                clipboard.setPrimaryClip(clip);
 
+                // insert phrase to notepad
                 NotepadDatabaseHelper notepadDBHelper;
                 notepadDBHelper = setupDatabaseHelper();
                 notepadDBHelper.insertNotepadData(travelPhraseData.get(position).getHomePhrase(), travelPhraseData.get(position).getTravelPhrase()+ "\n"+ travelPhraseData.get(position).getPronounciation(), new Date());
