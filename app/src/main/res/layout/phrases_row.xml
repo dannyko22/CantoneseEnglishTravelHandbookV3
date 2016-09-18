@@ -46,8 +46,17 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <View
+        android:layout_width="0px"
+        android:layout_height="20px"
+        android:background="#000000"/>
+
     <ImageButton
-        android:layout_width="40dp"
+        android:layout_width="20dp"
         android:layout_height="20dp"
         android:scaleType="fitXY"
         android:layout_marginRight="10dp"
@@ -55,6 +64,7 @@
         android:background="@android:color/transparent"
         android:id="@+id/copyImageButton"
         android:layout_weight="1" />
+    </LinearLayout>
 
     <View
         android:layout_width="0px"

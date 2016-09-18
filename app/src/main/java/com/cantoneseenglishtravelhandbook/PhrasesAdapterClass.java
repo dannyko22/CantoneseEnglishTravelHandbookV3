@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,9 +57,14 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         copyPhraseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // this code is to go back up the hierarchy of phrases_row such that we find the listview so that we can get the position index of where the user clicked.
                 View parentLinearLayout = ((View) view.getParent());
-                ListView parentListview = ((ListView) parentLinearLayout.getParent());
-                int position = parentListview.getPositionForView(view);
+                LinearLayout parentLinearview = ((LinearLayout) parentLinearLayout.getParent());
+                ListView parentparentListview = ((ListView) parentLinearview.getParent());
+                int position = parentparentListview.getPositionForView(view);
+
+
                 String phrase = travelPhraseData.get(position).getTravelPhrase() + "\n" + travelPhraseData.get(position).getHomePhrase() + "\n" + travelPhraseData.get(position).getPronounciation();
                 Toast.makeText(context, "Copied to Notepad" + "\n" + phrase, Toast.LENGTH_SHORT).show();
 //                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(CLIPBOARD_SERVICE);
