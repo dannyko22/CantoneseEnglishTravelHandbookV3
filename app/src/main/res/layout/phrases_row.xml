@@ -13,14 +13,17 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+        <View
+            android:layout_width="0px"
+            android:layout_height="20px" />
+
     <TextView
-        android:text="travelPhraseTextView"
-        android:layout_width="match_parent"
+        android:text="homePhraseTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/travelPhraseTextView"
-        android:layout_weight="1"
-        android:textSize="20sp"
-        tools:textColor="#000000" />
+        android:id="@+id/homePhraseTextView"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_weight="1" />
 
     <TextView
         android:text="pronounciationTextView"
@@ -28,14 +31,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/pronounciationTextView"
         android:layout_weight="1"
-        tools:textColor="#000000" />
+        android:textColor="?android:attr/textColorPrimary" />
 
     <TextView
-        android:text="homePhraseTextView"
-        android:layout_width="wrap_content"
+        android:text="travelPhraseTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/homePhraseTextView"
-        android:layout_weight="1" />
+        android:id="@+id/travelPhraseTextView"
+        android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="20px" />
 
     </LinearLayout>
 

@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
+            android:textColor="?android:attr/textColorPrimary"
             android:text="Title" />
 
         <TextView
@@ -25,7 +26,7 @@
             android:gravity="left"
             android:textStyle="italic"
             android:maxLines="1"
-            android:textColor="?android:attr/textColorSecondary"
+            android:textColor="?android:attr/textColorPrimary"
             android:text="Body" />
 
         <TextView
