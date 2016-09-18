@@ -1,10 +1,9 @@
 package com.cantoneseenglishtravelhandbook;
 
-import android.app.FragmentManager;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
-import android.support.annotation.Nullable;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -14,13 +13,9 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
 
@@ -53,14 +48,12 @@ public class CategoryPhrasesActivity extends AppCompatActivity {
     public void setupPhrasesListView() {
         final Context context = this;
         phrasesListView = (ListView) findViewById(R.id.phrasesListView);
+        //phrasesListView.setOnClickListener(this);
         populatePhrasesListView(travelList);
-        phrasesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
 
-            }
-        });
+
+
     }
 
     public void populatePhrasesListView(ArrayList travelPhrasesList) {
@@ -76,6 +69,7 @@ public class CategoryPhrasesActivity extends AppCompatActivity {
         PhrasesAdapterClass phrasesAdapter = new PhrasesAdapterClass(this, travelPhrasesList);
         phrasesListView.setAdapter(phrasesAdapter);
 
+
     }
 
 
@@ -88,4 +82,5 @@ public class CategoryPhrasesActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

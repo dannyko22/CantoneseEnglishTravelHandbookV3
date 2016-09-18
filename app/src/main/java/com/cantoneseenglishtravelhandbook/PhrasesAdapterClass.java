@@ -1,5 +1,7 @@
 package com.cantoneseenglishtravelhandbook;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -8,11 +10,17 @@ import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import static android.content.Context.CLIPBOARD_SERVICE;
 
 /**
  * Created by Danny on 28/08/2016.
@@ -29,7 +37,7 @@ public class PhrasesAdapterClass extends ArrayAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View row=inflater.inflate(R.layout.phrases_row, parent, false);
-        TextView travelPhrase= (TextView) row.findViewById(R.id.travelPhraseTextView);
+        final TextView travelPhrase= (TextView) row.findViewById(R.id.travelPhraseTextView);
         //travelPhrase.setTypeface(null, Typeface.BOLD);
         travelPhrase.setTextColor(Color.BLACK);
 
@@ -40,6 +48,20 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         homePhrase.setText((CharSequence) travelPhraseData.get(position).getHomePhrase());
         pronounciation.setText((CharSequence) travelPhraseData.get(position).getPronounciation());
 
+        ImageButton copyPhraseButton = (ImageButton) row.findViewById(R.id.copyImageButton);
+        copyPhraseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View parentLinearLayout = ((View) view.getParent());
+                ListView parentListview = ((ListView) parentLinearLayout.getParent());
+                int position = parentListview.getPositionForView(view);
+                String phrase = travelPhraseData.get(position).getTravelPhrase() + "\n" + travelPhraseData.get(position).getHomePhrase() + "\n" + travelPhraseData.get(position).getPronounciation();
+                Toast.makeText(context, "Copied to clipboard" + "\n" + phrase, Toast.LENGTH_SHORT).show();
+                ClipboardManager clipboard = (ClipboardManager) context.getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("label", phrase);
+                clipboard.setPrimaryClip(clip);
+            }
+        });
         //return super.getView(position, convertView, parent);
         return row;
     }
