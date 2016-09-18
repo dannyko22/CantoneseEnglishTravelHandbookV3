@@ -19,8 +19,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import static com.cantoneseenglishtravelhandbook.R.id.toolbar;
-
 public class CategoryPhrasesActivity extends AppCompatActivity {
 
     ArrayList<TravelPhraseData> travelList;

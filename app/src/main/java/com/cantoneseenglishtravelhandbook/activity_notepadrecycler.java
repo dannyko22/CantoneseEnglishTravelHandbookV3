@@ -146,7 +146,7 @@ public class activity_notepadrecycler extends AppCompatActivity {
                 NotepadData _data = notepadDataList.get(position);
                 notepadDBHelper.deleteNotepadData(_data.getID());
                 notepadDataList.remove(position);
-                mAdapter.notifyDataSetChanged();
+                mAdapter.notifyItemRemoved(position);
             }
 
             @Override

@@ -6,8 +6,11 @@ import android.database.SQLException;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -98,8 +101,12 @@ public class MainActivity extends AppCompatActivity
 
         categoryRecyclerView = (RecyclerView) findViewById(R.id.recyclerViewCategory);
         categoryRecyclerView.setHasFixedSize(true);
-        categoryLayoutManager = new LinearLayoutManager(this);
+        //categoryLayoutManager = new LinearLayoutManager(this);
+        categoryLayoutManager = new GridLayoutManager(this,2);
         categoryRecyclerView.setLayoutManager(categoryLayoutManager);
+        categoryRecyclerView.addItemDecoration(new GridSpacingItemDecoration(2, convertDpToPx(10), true));
+        categoryRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        //categoryRecyclerView.setLayoutManager(categoryLayoutManager);
 
         final GestureDetector mGestureDetector =
                 new GestureDetector(this, new GestureDetector.SimpleOnGestureListener(){
@@ -211,4 +218,10 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private int convertDpToPx(int dp){
+        return Math.round(dp*(getResources().getDisplayMetrics().xdpi/ DisplayMetrics.DENSITY_DEFAULT));
+
+    }
 }
+
