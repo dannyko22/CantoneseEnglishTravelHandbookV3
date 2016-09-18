@@ -67,7 +67,7 @@ public class PhrasesAdapterClass extends ArrayAdapter {
 
                 NotepadDatabaseHelper notepadDBHelper;
                 notepadDBHelper = setupDatabaseHelper();
-                notepadDBHelper.insertNotepadData(travelPhraseData.get(position).getHomePhrase(), travelPhraseData.get(position).getTravelPhrase(), new Date());
+                notepadDBHelper.insertNotepadData(travelPhraseData.get(position).getHomePhrase(), travelPhraseData.get(position).getTravelPhrase()+ "\n"+ travelPhraseData.get(position).getPronounciation(), new Date());
                 notepadDBHelper.close();
             }
         });
