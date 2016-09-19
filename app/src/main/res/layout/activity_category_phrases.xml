@@ -17,6 +17,7 @@
         android:id="@+id/phrasesListView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolbar" />
+        android:layout_below="@+id/toolbar"
+        android:clickable="true" />
 
 </RelativeLayout>

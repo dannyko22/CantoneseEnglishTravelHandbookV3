@@ -19,15 +19,17 @@
 
     <TextView
         android:text="homePhraseTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/homePhraseTextView"
+        android:clickable="true"
+        android:focusable="false"
         android:textColor="?android:attr/textColorPrimary"
         android:layout_weight="1" />
 
     <TextView
         android:text="pronounciationTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/pronounciationTextView"
         android:layout_weight="1"

@@ -8,6 +8,7 @@ import android.database.SQLException;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,13 +48,81 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         travelPhrase.setTextColor(Color.BLACK);
 
         TextView homePhrase = (TextView) row.findViewById(R.id.homePhraseTextView);
-        TextView pronounciation = (TextView) row.findViewById(R.id.pronounciationTextView);
+        final TextView pronounciation = (TextView) row.findViewById(R.id.pronounciationTextView);
 
-        travelPhrase.setText((CharSequence) travelPhraseData.get(position).getTravelPhrase());
+        // set visible to off by default
+        pronounciation.setVisibility(View.GONE);
+        travelPhrase.setVisibility(View.GONE);
+
+        // set color of txtviews
+        pronounciation.setTextColor(Color.rgb(20,99,255));
+        travelPhrase.setTextColor(Color.rgb(153,26,0));
+
+        travelPhrase.setText("▶ "+(CharSequence) travelPhraseData.get(position).getTravelPhrase());
         homePhrase.setText((CharSequence) travelPhraseData.get(position).getHomePhrase());
-        pronounciation.setText((CharSequence) travelPhraseData.get(position).getPronounciation());
+        pronounciation.setText("▶ "+(CharSequence) travelPhraseData.get(position).getPronounciation());
 
         ImageButton copyPhraseButton = (ImageButton) row.findViewById(R.id.copyImageButton);
+
+        //set click listener such that it expands when clicked.
+        homePhrase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("test", "test");
+                if (pronounciation.getVisibility() == View.GONE)
+                {
+                    pronounciation.setVisibility(View.VISIBLE);
+                    travelPhrase.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    pronounciation.setVisibility(View.GONE);
+                    travelPhrase.setVisibility(View.GONE);
+
+                }
+
+            }
+        });
+
+        travelPhrase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("test", "test");
+                if (pronounciation.getVisibility() == View.GONE)
+                {
+                    pronounciation.setVisibility(View.VISIBLE);
+                    travelPhrase.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    pronounciation.setVisibility(View.GONE);
+                    travelPhrase.setVisibility(View.GONE);
+
+                }
+
+            }
+        });
+
+        pronounciation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("test", "test");
+                if (pronounciation.getVisibility() == View.GONE)
+                {
+                    pronounciation.setVisibility(View.VISIBLE);
+                    travelPhrase.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    pronounciation.setVisibility(View.GONE);
+                    travelPhrase.setVisibility(View.GONE);
+
+                }
+
+            }
+        });
+
+        // set click listener to copy phrases to the notebook.
         copyPhraseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
