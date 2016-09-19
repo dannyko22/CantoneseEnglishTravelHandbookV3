@@ -15,7 +15,7 @@
 
         <View
             android:layout_width="0px"
-            android:layout_height="20px" />
+            android:layout_height="35px" />
 
     <TextView
         android:text="homePhraseTextView"
@@ -25,7 +25,8 @@
         android:clickable="true"
         android:focusable="false"
         android:textColor="?android:attr/textColorPrimary"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:textSize="18sp" />
 
     <TextView
         android:text="pronounciationTextView"
@@ -33,18 +34,20 @@
         android:layout_height="wrap_content"
         android:id="@+id/pronounciationTextView"
         android:layout_weight="1"
-        android:textColor="?android:attr/textColorPrimary" />
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18sp" />
 
     <TextView
         android:text="travelPhraseTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/travelPhraseTextView"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:textSize="18sp" />
 
         <View
             android:layout_width="0px"
-            android:layout_height="20px" />
+            android:layout_height="35px" />
 
     </LinearLayout>
 
@@ -54,7 +57,7 @@
         android:orientation="vertical">
     <View
         android:layout_width="0px"
-        android:layout_height="20px"
+        android:layout_height="35px"
         android:background="#000000"/>
 
     <ImageButton
