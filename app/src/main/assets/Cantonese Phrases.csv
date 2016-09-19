@@ -50,9 +50,9 @@
 50;Emergency;I'm lost.;我蕩失路.;Ngóh dohng sāt louh.;file:///android_asset/warning.png
 51;Emergency;I lost my bag.;我唔見咗個袋.;Ngóh m̀h'gin jó go doih.;file:///android_asset/warning.png
 52;Emergency;I dropped my wallet.;我跌咗個銀包.;Ngóh dit jó go ngàhn bāau.;file:///android_asset/warning.png
-53;Emergency;I don't feel well.;我唔舒服.;Ngóh m̀h syū fuhk.;file:///android_asset/warning.png
-54;Emergency;I've been injured.;我受咗傷.;Ngóh sauh jó sēung.;file:///android_asset/warning.png
-55;Emergency;Please call a doctor.;唔該幫我叫醫生.;M̀h' gōi bōng ngóh giu yī sāng.;file:///android_asset/warning.png
+53;Medical;I don't feel well.;我唔舒服.;Ngóh m̀h syū fuhk.;file:///android_asset/warning.png
+54;Medical;I've been injured.;我受咗傷.;Ngóh sauh jó sēung.;file:///android_asset/warning.png
+55;Medical;Please call a doctor.;唔該幫我叫醫生.;M̀h' gōi bōng ngóh giu yī sāng.;file:///android_asset/warning.png
 56;Emergency;Can I use your phone?;可唔可以借個電話用呀?;Hó-m̀h-hó'yi je go dihn wáh yuhng a?;file:///android_asset/warning.png
 57;Emergency;I haven't done anything wrong.;我冇做錯野.;Ngóh móuh jouh cho yéh.;file:///android_asset/warning.png
 58;Emergency;It was a misunderstanding.;件事係誤會.;Ginh sih haih ngh-wuih.;file:///android_asset/warning.png
@@ -219,7 +219,7 @@
 219;Hotel;The tap/faucet is leaking;水龍頭漏水;séui lùhng tàuh lauh séui;file:///android_asset/hotel.png
 220;Hotel;The drain is blocked;坑渠塞咗呀;hàang kèuih sāk jó a;file:///android_asset/hotel.png
 221;Hotel;The air conditioner is too noisy;冷氣好嘈呀;láahnghei hóu chòuh a;file:///android_asset/hotel.png
-222;Hotel;I would like to move to another room;我想換過間房;ngóh séung wuhngwo gàanfóng;file:///android_asset/hotel.png
+222;Hotel;I would like to move to another room;我想換過間房;ngóh séung wuhn gwo gàan fóng;file:///android_asset/hotel.png
 223;Hotel;When should I vacate the room?;我幾時要退房呀?;ngóh géisìh yiu teuifóng a?;file:///android_asset/hotel.png
 224;Hotel;bedsheets;床襟;chòhng kám;file:///android_asset/hotel.png
 225;Hotel;a bathroom;浴室;yuhk sāt;file:///android_asset/hotel.png
@@ -308,7 +308,7 @@
 308;Menu;salt;鹽;yìhm;file:///android_asset/restaurant.png
 309;Menu;black pepper;黑椒;hāk jīu;file:///android_asset/restaurant.png
 310;Menu;butter;牛油;ngàuh yàuh;file:///android_asset/restaurant.png
-311;Restaurant;"Excuse me, waiter? (''getting attention of server'')";侍應唔該.;Si hying m̀h' gōi.;file:///android_asset/restaurant.png
+311;Restaurant;"Excuse me, waiter? (''getting attention of server'')";伙記唔該.;fo gei m̀h' gōi.;file:///android_asset/restaurant.png
 312;Restaurant;I'm finished.;食完嘅喇.;Sihk yùhn ge la.;file:///android_asset/restaurant.png
 313;Restaurant;It was delicious.;好食.;Hóu sihk;file:///android_asset/restaurant.png
 314;Restaurant;Please clear the plates.;唔該幫我清下張枱.;M̀h' gōi bōng ngóh chīng-háh jēung tói.;file:///android_asset/restaurant.png
@@ -367,16 +367,16 @@
 367;Shopping;...an English-language newspaper.;...英文報紙.;Yīng màhn boují.;file:///android_asset/shopping.png
 368;Shopping;...an English-English dictionary.;...英英字典.;Yīng yīng jihdín.;file:///android_asset/shopping.png
 369;Shopping;Big/Small;大/細;Daai / sai;file:///android_asset/shopping.png
-370;Driving;I want to rent a car.;我想租車.;Ngóh séung jōu chē.;file:///android_asset/getting_around.png
-371;Driving;Can I get insurance?;邊度可以買保險嘎?;Bīn douh hó'yi máaih bóu hím gah?;file:///android_asset/getting_around.png
-372;Driving;stop (''on a street sign'');停;tìhng;file:///android_asset/getting_around.png
-373;Driving;one way;單程路;dāan chìhng louh;file:///android_asset/getting_around.png
-374;Driving;yield;讓;yeuhng;file:///android_asset/getting_around.png
-375;Driving;no parking;不准泊車;bāt jéun paak chē;file:///android_asset/getting_around.png
-376;Driving;speed limit;速度限制;chūk douh haahn jai;file:///android_asset/getting_around.png
-377;Driving;gas (''petrol'') station;油站;yàuh jaahm;file:///android_asset/getting_around.png
-378;Driving;petrol;汽油;hei yàuh;file:///android_asset/getting_around.png
-379;Driving;diesel;柴油;chàaih yàuh;file:///android_asset/getting_around.png
+370;Driving;I want to rent a car.;我想租車.;Ngóh séung jōu chē.;file:///android_asset/driving.png
+371;Driving;Can I get insurance?;邊度可以買保險嘎?;Bīn douh hó'yi máaih bóu hím gah?;file:///android_asset/driving.png
+372;Driving;stop (''on a street sign'');停;tìhng;file:///android_asset/driving.png
+373;Driving;one way;單程路;dāan chìhng louh;file:///android_asset/driving.png
+374;Driving;yield;讓;yeuhng;file:///android_asset/driving.png
+375;Driving;no parking;不准泊車;bāt jéun paak chē;file:///android_asset/driving.png
+376;Driving;speed limit;速度限制;chūk douh haahn jai;file:///android_asset/driving.png
+377;Driving;gas (''petrol'') station;油站;yàuh jaahm;file:///android_asset/driving.png
+378;Driving;petrol;汽油;hei yàuh;file:///android_asset/driving.png
+379;Driving;diesel;柴油;chàaih yàuh;file:///android_asset/driving.png
 380;Dating;I love you;我愛你;ngóh oi néih;file:///android_asset/love.png
 381;Dating;Are you free for lunch?;我地一齊食晏晝飯好嘛?;ngóh deih yāt chàih sihk ngaan jau faahn hóu ma?;file:///android_asset/love.png
 382;Dating;Are you free this evening?;你今晚得唔得閒呀?;néih gàm máahn dāk m̀h dāk hàahn a?;file:///android_asset/love.png
@@ -390,24 +390,24 @@
 390;Dating;You mean so much to me;你喺我心目中好重要;nei hai ngo sam muk zung hou zung jiu.;file:///android_asset/love.png
 391;Dating;Will you be my Valentine? ;你願意做我嘅愛人嗎？;nei jyun ji zou ngo ge oi jan maa?;file:///android_asset/love.png
 392;Dating;You're so beautiful. ;你好靚。;nei hou leng.;file:///android_asset/love.png
-393;Dating; I think of you as more than a friend. ;我當你係朋友咋。;ngo dong nei hai pang jau zaa.;file:///android_asset/love.png
-394;Dating;A hundred hearts would be too few to carry all my love for you. ;一百個心都裝唔晒我對你嘅;jat baak go sam dou zong m saai ngo deoi nei ge oi.;file:///android_asset/love.png
+393;Dating;I think of you as more than a friend. ;我當你係朋友咋。;ngo dong nei hai pang jau zaa.;file:///android_asset/love.png
+394;Dating;A hundred hearts would be too few to carry all my love for you. ;一百個心都裝唔晒我對你嘅愛;jat baak go sam dou zong m saai ngo deoi nei ge oi.;file:///android_asset/love.png
 395;Dating;You're so handsome.; 你好靚仔;nei hou leng zai.;file:///android_asset/love.png
 396;Dating;I've got a crush on you. ;我暗戀你。;ngo am lyun nei.;file:///android_asset/love.png
-397;Dating; You make me want to be a better man. ;你令我想成為一個更好嘅;nei ling ngo soeng sing wai jat go gang hou ge jan.;file:///android_asset/love.png
+397;Dating;You make me want to be a better man. ;你令我想成為一個更好嘅;nei ling ngo soeng sing wai jat go gang hou ge jan.;file:///android_asset/love.png
 398;Dating;"You are my sunshine, my love. ";你係我嘅陽光，我嘅愛人。;"nei hai ngo ge joeng gwong, ngo ge oi jan.";file:///android_asset/love.png
 399;Dating;We were meant to be together;我哋注定喺埋一齊。;ngo dei zyu ding hai maai jat cai.;file:///android_asset/love.png
-400;Medical;Headache;頭痛;tau4 tung3;file:///android_asset/medical.png
-401;Medical;stomachache;肚痛;tou5 tung3;file:///android_asset/medical.png
-402;Medical;Medicine;藥;joek6;file:///android_asset/medical.png
-403;Medical;Pharmacy;藥房;joek6 fong4;file:///android_asset/medical.png
-404;Medical;Doctor;醫生;joek6 fong4;file:///android_asset/medical.png
-405;Medical;Ambulance;白車;baak6 ce1;file:///android_asset/medical.png
-406;Medical;Hospital;醫院;ji1 jyun6*2;file:///android_asset/medical.png
+400;Medical;Headache;頭痛;tau tung;file:///android_asset/medical.png
+401;Medical;stomachache;肚痛;tou tung;file:///android_asset/medical.png
+402;Medical;Medicine;藥;joek;file:///android_asset/medical.png
+403;Medical;Pharmacy;藥房;joek fong;file:///android_asset/medical.png
+404;Medical;Doctor;醫生;joek fong;file:///android_asset/medical.png
+405;Medical;Ambulance;白車;baak ce;file:///android_asset/medical.png
+406;Medical;Hospital;醫院;ji jyun*;file:///android_asset/medical.png
 407;Medical;Help me;幫我;bong ngo;file:///android_asset/medical.png
 408;Medical;Poison;毒藥;duk joek;file:///android_asset/medical.png
-409;Medical;Accident;意外;ji3 ngoi6;file:///android_asset/medical.png
-410;Medical;Stroke;爆血管;baau3 hyut3 gun2;file:///android_asset/medical.png
-411;Medical;Heart Attack;心臟病發;sam1 zong6 beng6 faat;file:///android_asset/medical.png
-412;Medical;Asthma;氣喘病;hei3 cyun2 beng6;file:///android_asset/medical.png
-413;Medical;Allergy;過敏;gwo3 man5;file:///android_asset/medical.png
+409;Medical;Accident;意外;ji ngoi;file:///android_asset/medical.png
+410;Medical;Stroke;爆血管;baau hyut gun;file:///android_asset/medical.png
+411;Medical;Heart Attack;心臟病發;sam zong beng faat;file:///android_asset/medical.png
+412;Medical;Asthma;氣喘病;hei cyun beng;file:///android_asset/medical.png
+413;Medical;Allergy;過敏;gwo man;file:///android_asset/medical.png

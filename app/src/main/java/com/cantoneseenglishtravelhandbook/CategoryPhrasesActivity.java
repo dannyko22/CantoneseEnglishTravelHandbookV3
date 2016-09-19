@@ -25,9 +25,11 @@ public class CategoryPhrasesActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Phrases");
+
 
         travelList = getIntent().getParcelableArrayListExtra("phrases");
+        String category = getIntent().getExtras().getString("Category");
+        getSupportActionBar().setTitle(category);
 
         setupPhrasesListView();
 

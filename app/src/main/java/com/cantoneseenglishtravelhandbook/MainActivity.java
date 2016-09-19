@@ -133,6 +133,7 @@ public class MainActivity extends AppCompatActivity
                     travelList = myDbHelper.getTravelPhraseDatabyCategory(category);
 
                     intent.putParcelableArrayListExtra("phrases", travelList);
+                    intent.putExtra("Category", category);
                     startActivity(intent);
 
 

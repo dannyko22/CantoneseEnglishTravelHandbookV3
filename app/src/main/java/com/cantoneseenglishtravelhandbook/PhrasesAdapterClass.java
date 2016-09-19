@@ -65,7 +65,7 @@ public class PhrasesAdapterClass extends ArrayAdapter {
                 int position = parentparentListview.getPositionForView(view);
 
 
-                String phrase = travelPhraseData.get(position).getTravelPhrase() + "\n" + travelPhraseData.get(position).getHomePhrase() + "\n" + travelPhraseData.get(position).getPronounciation();
+                String phrase = "\n" + travelPhraseData.get(position).getHomePhrase() + "\n" + travelPhraseData.get(position).getPronounciation() + "\n" + travelPhraseData.get(position).getTravelPhrase();
                 Toast.makeText(context, "Copied to Notepad" + "\n" + phrase, Toast.LENGTH_SHORT).show();
 
                 // insert phrase to notepad
