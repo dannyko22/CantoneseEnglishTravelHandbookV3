@@ -3,7 +3,8 @@ package com.cantoneseenglishtravelhandbook;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
-import android.content.res.ColorStateList;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.database.SQLException;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -20,6 +21,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -50,9 +53,7 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         TextView homePhrase = (TextView) row.findViewById(R.id.homePhraseTextView);
         final TextView pronounciation = (TextView) row.findViewById(R.id.pronounciationTextView);
 
-        // set visible to off by default
-        pronounciation.setVisibility(View.GONE);
-        travelPhrase.setVisibility(View.GONE);
+
 
         // set color of txtviews
         pronounciation.setTextColor(Color.rgb(20,99,255));
@@ -62,7 +63,11 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         homePhrase.setText((CharSequence) travelPhraseData.get(position).getHomePhrase());
         pronounciation.setText("▶ "+(CharSequence) travelPhraseData.get(position).getPronounciation());
 
-        ImageButton copyPhraseButton = (ImageButton) row.findViewById(R.id.copyImageButton);
+        final ImageButton copyPhraseButton = (ImageButton) row.findViewById(R.id.copyImageButton);
+        final ImageButton voicePhraseButton = (ImageButton) row.findViewById(R.id.voiceImageButton);
+
+        // set visible to off by default
+        hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
 
         //set click listener such that it expands when clicked.
         homePhrase.setOnClickListener(new View.OnClickListener() {
@@ -71,14 +76,11 @@ public class PhrasesAdapterClass extends ArrayAdapter {
                 Log.d("test", "test");
                 if (pronounciation.getVisibility() == View.GONE)
                 {
-                    pronounciation.setVisibility(View.VISIBLE);
-                    travelPhrase.setVisibility(View.VISIBLE);
+                    showButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
                 }
                 else
                 {
-                    pronounciation.setVisibility(View.GONE);
-                    travelPhrase.setVisibility(View.GONE);
-
+                    hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
                 }
 
             }
@@ -90,13 +92,11 @@ public class PhrasesAdapterClass extends ArrayAdapter {
                 Log.d("test", "test");
                 if (pronounciation.getVisibility() == View.GONE)
                 {
-                    pronounciation.setVisibility(View.VISIBLE);
-                    travelPhrase.setVisibility(View.VISIBLE);
+                    showButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
                 }
                 else
                 {
-                    pronounciation.setVisibility(View.GONE);
-                    travelPhrase.setVisibility(View.GONE);
+                    hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
 
                 }
 
@@ -109,13 +109,11 @@ public class PhrasesAdapterClass extends ArrayAdapter {
                 Log.d("test", "test");
                 if (pronounciation.getVisibility() == View.GONE)
                 {
-                    pronounciation.setVisibility(View.VISIBLE);
-                    travelPhrase.setVisibility(View.VISIBLE);
+                    showButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
                 }
                 else
                 {
-                    pronounciation.setVisibility(View.GONE);
-                    travelPhrase.setVisibility(View.GONE);
+                    hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
 
                 }
 
@@ -130,7 +128,8 @@ public class PhrasesAdapterClass extends ArrayAdapter {
                 // this code is to go back up the hierarchy of phrases_row.xml such that we find the listview so that we can get the position index of where the user clicked.
                 View parentLinearLayout = ((View) view.getParent());
                 LinearLayout parentLinearview = ((LinearLayout) parentLinearLayout.getParent());
-                ListView parentparentListview = ((ListView) parentLinearview.getParent());
+                LinearLayout parentLinearview2 = ((LinearLayout) parentLinearview.getParent());
+                ListView parentparentListview = ((ListView) parentLinearview2.getParent());
                 int position = parentparentListview.getPositionForView(view);
 
 
@@ -144,9 +143,50 @@ public class PhrasesAdapterClass extends ArrayAdapter {
                 notepadDBHelper.close();
             }
         });
+
+        // set click listener to speaker button.
+        voicePhraseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MediaPlayer mPlayer = MediaPlayer.create(context, R.raw.temp);
+                mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        // TODO Auto-generated method stub
+                        mp.release();
+                    }
+                });
+
+                mPlayer.start();
+
+
+            }
+        });
+
         //return super.getView(position, convertView, parent);
         return row;
     }
+
+    private void hideButtons(TextView travelPhrase, TextView pronounciation, ImageButton voicePhraseButton, ImageButton copyPhraseButton)
+    {
+        copyPhraseButton.setVisibility(View.GONE);
+        voicePhraseButton.setVisibility(View.GONE);
+        pronounciation.setVisibility(View.GONE);
+        travelPhrase.setVisibility(View.GONE);
+
+    }
+
+    private void showButtons(TextView travelPhrase, TextView pronounciation, ImageButton voicePhraseButton, ImageButton copyPhraseButton)
+    {
+        copyPhraseButton.setVisibility(View.VISIBLE);
+        voicePhraseButton.setVisibility(View.VISIBLE);
+        pronounciation.setVisibility(View.VISIBLE);
+        travelPhrase.setVisibility(View.VISIBLE);
+    }
+
+
 
     public PhrasesAdapterClass(Context _context, ArrayList<TravelPhraseData> _travelPhraseData) {
         super(_context, R.layout.phrases_row, _travelPhraseData);
