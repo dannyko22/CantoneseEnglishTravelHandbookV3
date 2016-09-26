@@ -15,9 +15,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/phrasesListView"
+
+        android:clickable="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolbar"
-        android:clickable="true" />
+        android:scrollbarFadeDuration="0" />
 
 </RelativeLayout>
