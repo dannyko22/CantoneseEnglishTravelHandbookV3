@@ -3,6 +3,7 @@ package com.cantoneseenglishtravelhandbook;
 import android.content.Context;
 import android.content.Intent;
 import android.database.SQLException;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -43,7 +44,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setImageResource(R.drawable.clipboard);
@@ -206,8 +206,9 @@ public class MainActivity extends AppCompatActivity
             // Handle the notepad action
             Intent intent = new Intent(context, activity_notepadrecycler.class);
             startActivity(intent);
-        } else if (id == R.id.nav_share) {
-
+        } else if (id == R.id.homeapps) {
+            final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://play.google.com/store/apps/developer?id=Danny%20Ko&hl=en"));
+            startActivity(intent);
         } else if (id == R.id.nav_send) {
 
         }
