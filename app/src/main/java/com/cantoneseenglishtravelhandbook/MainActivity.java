@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity
     RecyclerView categoryRecyclerView;
     CategoryAdapterClass categoryAdapterClass;
     LinearLayoutManager categoryLayoutManager;
+    final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        final Context context = this;
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setImageResource(R.drawable.clipboard);
@@ -201,14 +202,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.notepad) {
+            // Handle the notepad action
+            Intent intent = new Intent(context, activity_notepadrecycler.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
