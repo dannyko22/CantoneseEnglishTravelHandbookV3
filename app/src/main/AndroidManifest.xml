@@ -25,9 +25,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".NotepadActivity" />
-        <activity android:name=".activity_notepadrecycler"></activity>
-
-
+        <activity android:name=".activity_notepadrecycler" />
+        <activity android:name=".about_me"></activity>
     </application>
 
 </manifest>

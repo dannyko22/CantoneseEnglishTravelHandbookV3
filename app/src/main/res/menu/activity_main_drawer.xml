@@ -15,6 +15,10 @@
                 android:icon="@drawable/ic_home_black_24dp"
                 android:title="My Other Apps" />
             <item
+                android:id="@+id/rateme"
+                android:icon="@drawable/ic_star_rate_black_18dp"
+                android:title="Rate this app" />
+            <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_directions_bike_black_24dp"
                 android:title="About Me" />

@@ -1,5 +1,6 @@
 package com.cantoneseenglishtravelhandbook;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.database.SQLException;
@@ -23,6 +24,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -210,8 +212,24 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.homeapps) {
             final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://play.google.com/store/apps/developer?id=Danny%20Ko&hl=en"));
             startActivity(intent);
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.rateme) {
 
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            //Try Google play
+            intent.setData(Uri.parse("market://details?id=com.cantoneseenglishtravelhandbook.app"));
+            if (!MyStartActivity(intent)) {
+                //Market (Google play) app seems not installed, let's try to open a webbrowser
+                intent.setData(Uri.parse("https://play.google.com/store/apps/details?com.cantoneseenglishtravelhandbook.app"));
+                if (!MyStartActivity(intent)) {
+                    //Well if this also fails, we have run out of options, inform the user.
+                    Toast.makeText(this, "Could not open Android market, please install the market app.", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+
+        } else if (id == R.id.nav_send) {
+            Intent intent = new Intent(context, about_me.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -222,6 +240,18 @@ public class MainActivity extends AppCompatActivity
     private int convertDpToPx(int dp){
         return Math.round(dp*(getResources().getDisplayMetrics().xdpi/ DisplayMetrics.DENSITY_DEFAULT));
 
+    }
+
+    private boolean MyStartActivity(Intent aIntent) {
+        try
+        {
+            startActivity(aIntent);
+            return true;
+        }
+        catch (ActivityNotFoundException e)
+        {
+            return false;
+        }
     }
 }
 
