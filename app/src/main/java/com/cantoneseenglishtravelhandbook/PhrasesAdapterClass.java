@@ -65,15 +65,19 @@ public class PhrasesAdapterClass extends ArrayAdapter {
 
         final ImageButton copyPhraseButton = (ImageButton) row.findViewById(R.id.copyImageButton);
         final ImageButton voicePhraseButton = (ImageButton) row.findViewById(R.id.voiceImageButton);
+        final View topemptyview = (View) row.findViewById(R.id.topemptyview);
+        final View bottomemptyview = (View) row.findViewById(R.id.bottomemptyview);
+
+        final LinearLayout phrasesLayout = (LinearLayout) row.findViewById(R.id.phrasesLayout);
+
 
         // set visible to off by default
         hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
 
-        //set click listener such that it expands when clicked.
-        homePhrase.setOnClickListener(new View.OnClickListener() {
+        //set click listener such that it expands when layout is clicked.
+        phrasesLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("test", "test");
                 if (pronounciation.getVisibility() == View.GONE)
                 {
                     showButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
@@ -86,39 +90,6 @@ public class PhrasesAdapterClass extends ArrayAdapter {
             }
         });
 
-        travelPhrase.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("test", "test");
-                if (pronounciation.getVisibility() == View.GONE)
-                {
-                    showButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
-                }
-                else
-                {
-                    hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
-
-                }
-
-            }
-        });
-
-        pronounciation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("test", "test");
-                if (pronounciation.getVisibility() == View.GONE)
-                {
-                    showButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
-                }
-                else
-                {
-                    hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
-
-                }
-
-            }
-        });
 
         // set click listener to copy phrases to the notebook.
         copyPhraseButton.setOnClickListener(new View.OnClickListener() {
