@@ -1,11 +1,14 @@
 package com.cantoneseenglishtravelhandbook;
 
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.SQLException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -13,6 +16,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -24,10 +28,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -70,6 +76,8 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+
         myDbHelper = new DatabaseHelper(this);
 
 
@@ -97,6 +105,8 @@ public class MainActivity extends AppCompatActivity
         travelCategoryList = myDbHelper.getAllCategoryData();
 
         setupCategoryListView();
+
+        checkEngineExist(this);
     }
 
     public void setupCategoryListView()
@@ -253,5 +263,50 @@ public class MainActivity extends AppCompatActivity
             return false;
         }
     }
+
+    private void checkEngineExist(Context _context)
+    {
+
+        TextToSpeech tts = new TextToSpeech(_context, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+            }
+        });
+
+        Boolean engineExist = false;
+        for (TextToSpeech.EngineInfo engines : tts.getEngines()) {
+            if (engines.toString().equals("EngineInfo{name=com.google.android.tts}"))
+            {
+                engineExist = true;
+            }
+            Log.d("Engine Info " , engines.toString());
+        }
+
+        // if google tts doesn't exist, prompt a dialog box.
+        if (!engineExist)
+        {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setTitle("Google TTS Missing");
+            alert.setMessage("Install Google Text-To-Speech app from the google play store to hear Cantonese phrases");
+
+            alert.setPositiveButton("Cancel", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                    //Your action here
+                }
+            });
+
+            alert.setNegativeButton("Play Store", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int whichButton) {
+                    //Your action here
+                    final Intent intent = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.tts&hl=en"));
+                    startActivity(intent);
+
+                }
+            });
+
+            alert.show();
+
+        }
+    };
 }
 

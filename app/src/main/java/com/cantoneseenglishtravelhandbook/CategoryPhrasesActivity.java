@@ -1,6 +1,8 @@
 package com.cantoneseenglishtravelhandbook;
 
 import android.content.Context;
+import android.content.Intent;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -33,6 +35,7 @@ public class CategoryPhrasesActivity extends AppCompatActivity {
         String category = getIntent().getExtras().getString("Category");
         getSupportActionBar().setTitle(category);
 
+
         setupPhrasesListView();
 
     }
@@ -60,6 +63,22 @@ public class CategoryPhrasesActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    protected void onActivityResult(
+            int requestCode, int resultCode, Intent data) {
+        if (requestCode == 0) {
+            if (resultCode == TextToSpeech.Engine.CHECK_VOICE_DATA_PASS) {
+                // success, create the TTS instance
+
+            } else {
+                // missing data, install it
+                Intent installIntent = new Intent();
+                installIntent.setAction(
+                        TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA);
+                startActivity(installIntent);
+            }
+        }
     }
 
 }
