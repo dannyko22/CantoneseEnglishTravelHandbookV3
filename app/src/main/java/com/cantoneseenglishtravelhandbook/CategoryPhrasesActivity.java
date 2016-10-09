@@ -41,7 +41,6 @@ public class CategoryPhrasesActivity extends AppCompatActivity {
     public void setupPhrasesListView() {
         final Context context = this;
         phrasesListView = (ListView) findViewById(R.id.phrasesListView);
-        //phrasesListView.setOnClickListener(this);
         populatePhrasesListView(travelList);
 
 

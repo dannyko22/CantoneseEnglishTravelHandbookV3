@@ -8,6 +8,8 @@ import android.media.MediaPlayer;
 import android.database.SQLException;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
+import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,6 +23,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Locale;
 
 import org.w3c.dom.Text;
 
@@ -39,7 +42,7 @@ public class PhrasesAdapterClass extends ArrayAdapter {
     Context context;
     ArrayList<TravelPhraseData> travelPhraseData;
     LayoutInflater inflater;
-
+    TTSManager ttsManager = null;
 
     @NonNull
     @Override
@@ -70,6 +73,8 @@ public class PhrasesAdapterClass extends ArrayAdapter {
 
         final LinearLayout phrasesLayout = (LinearLayout) row.findViewById(R.id.phrasesLayout);
 
+        ttsManager = new TTSManager();
+        ttsManager.init(context);
 
         // set visible to off by default
         hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
@@ -103,7 +108,6 @@ public class PhrasesAdapterClass extends ArrayAdapter {
                 ListView parentparentListview = ((ListView) parentLinearview2.getParent());
                 int position = parentparentListview.getPositionForView(view);
 
-
                 String phrase = "\n" + travelPhraseData.get(position).getHomePhrase() + "\n" + travelPhraseData.get(position).getPronounciation() + "\n" + travelPhraseData.get(position).getTravelPhrase();
                 Toast.makeText(context, "Copied to Notepad" + "\n" + phrase, Toast.LENGTH_SHORT).show();
 
@@ -119,19 +123,19 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         voicePhraseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MediaPlayer mPlayer = MediaPlayer.create(context, R.raw.temp);
-                mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        // TODO Auto-generated method stub
-                        mp.release();
-                    }
-                });
+                // this code is to go back up the hierarchy of phrases_row.xml such that we find the listview so that we can get the position index of where the user clicked.
+                View parentLinearLayout = ((View) view.getParent());
+                LinearLayout parentLinearview = ((LinearLayout) parentLinearLayout.getParent());
+                LinearLayout parentLinearview2 = ((LinearLayout) parentLinearview.getParent());
+                ListView parentparentListview = ((ListView) parentLinearview2.getParent());
+                int position = parentparentListview.getPositionForView(view);
 
-                mPlayer.start();
 
+
+                String toSpeak =  travelPhraseData.get(position).getTravelPhrase();
+                toSpeak = toSpeak.replaceAll("_", " ");
+                ttsManager.initQueue(toSpeak);
 
             }
         });
