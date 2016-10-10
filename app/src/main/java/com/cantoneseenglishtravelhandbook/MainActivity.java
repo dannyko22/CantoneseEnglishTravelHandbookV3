@@ -1,16 +1,20 @@
 package com.cantoneseenglishtravelhandbook;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.SQLException;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -30,6 +34,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -51,16 +58,16 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Cantonese Survival");
+        getSupportActionBar().setTitle("Cantonese");
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setImageResource(R.drawable.clipboard);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //        .setAction("Action", null).show();
 
                 Intent intent = new Intent(context, activity_notepadrecycler.class);
                 startActivity(intent);
@@ -106,7 +113,15 @@ public class MainActivity extends AppCompatActivity
 
         setupCategoryListView();
 
+        isStoragePermissionGranted();
+        initializeAdNetwork();
         checkEngineExist(this);
+    }
+
+    private void initializeAdNetwork() {
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     public void setupCategoryListView()
@@ -202,8 +217,18 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.ratemetoolbar) {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            //Try Google play
+            intent.setData(Uri.parse("market://details?id=com.cantoneseenglishtravelhandbook"));
+            if (!MyStartActivity(intent)) {
+                //Market (Google play) app seems not installed, let's try to open a webbrowser
+                intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.cantoneseenglishtravelhandbook"));
+                if (!MyStartActivity(intent)) {
+                    //Well if this also fails, we have run out of options, inform the user.
+                    Toast.makeText(this, "Could not open Android market, please install the market app.", Toast.LENGTH_SHORT).show();
+                }
+            }
         }
 
         return super.onOptionsItemSelected(item);
@@ -264,6 +289,24 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    public  boolean isStoragePermissionGranted() {
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
+                    == PackageManager.PERMISSION_GRANTED) {
+                return true;
+            } else {
+                //requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+            }
+
+            return false;
+        }
+        else { //permission is automatically granted on sdk<23 upon installation
+
+            return true;
+        }
+    }
+
     private void checkEngineExist(Context _context)
     {
 
@@ -308,5 +351,7 @@ public class MainActivity extends AppCompatActivity
 
         }
     };
+
+
 }
 
