@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity
     CategoryAdapterClass categoryAdapterClass;
     LinearLayoutManager categoryLayoutManager;
     final Context context = this;
+    private int MY_DATA_CHECK_CODE = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Cantonese");
+        getSupportActionBar().setTitle("Cantonese Speak");
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -115,6 +116,7 @@ public class MainActivity extends AppCompatActivity
 
         isStoragePermissionGranted();
         initializeAdNetwork();
+
         checkEngineExist(this);
     }
 
@@ -313,8 +315,11 @@ public class MainActivity extends AppCompatActivity
         TextToSpeech tts = new TextToSpeech(_context, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
+
             }
         });
+
+        String defaultEngine = tts.getDefaultEngine();
 
         Boolean engineExist = false;
         for (TextToSpeech.EngineInfo engines : tts.getEngines()) {

@@ -47,9 +47,9 @@ public class PhrasesAdapterClass extends ArrayAdapter {
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View row=inflater.inflate(R.layout.phrases_row, parent, false);
-        final TextView travelPhrase= (TextView) row.findViewById(R.id.travelPhraseTextView);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View row = inflater.inflate(R.layout.phrases_row, parent, false);
+        final TextView travelPhrase = (TextView) row.findViewById(R.id.travelPhraseTextView);
         //travelPhrase.setTypeface(null, Typeface.BOLD);
         travelPhrase.setTextColor(Color.BLACK);
 
@@ -57,14 +57,13 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         final TextView pronounciation = (TextView) row.findViewById(R.id.pronounciationTextView);
 
 
-
         // set color of txtviews
-        pronounciation.setTextColor(Color.rgb(20,99,255));
-        travelPhrase.setTextColor(Color.rgb(153,26,0));
+        pronounciation.setTextColor(Color.rgb(20, 99, 255));
+        travelPhrase.setTextColor(Color.rgb(153, 26, 0));
 
-        travelPhrase.setText("▶ "+(CharSequence) travelPhraseData.get(position).getTravelPhrase());
+        travelPhrase.setText("▶ " + (CharSequence) travelPhraseData.get(position).getTravelPhrase());
         homePhrase.setText((CharSequence) travelPhraseData.get(position).getHomePhrase());
-        pronounciation.setText("▶ "+(CharSequence) travelPhraseData.get(position).getPronounciation());
+        pronounciation.setText("▶ " + (CharSequence) travelPhraseData.get(position).getPronounciation());
 
         final ImageButton copyPhraseButton = (ImageButton) row.findViewById(R.id.copyImageButton);
         final ImageButton voicePhraseButton = (ImageButton) row.findViewById(R.id.voiceImageButton);
@@ -74,7 +73,11 @@ public class PhrasesAdapterClass extends ArrayAdapter {
         final LinearLayout phrasesLayout = (LinearLayout) row.findViewById(R.id.phrasesLayout);
 
         ttsManager = new TTSManager();
+
         ttsManager.init(context);
+
+
+
 
         // set visible to off by default
         hideButtons(travelPhrase, pronounciation, voicePhraseButton, copyPhraseButton);
@@ -156,7 +159,13 @@ public class PhrasesAdapterClass extends ArrayAdapter {
     private void showButtons(TextView travelPhrase, TextView pronounciation, ImageButton voicePhraseButton, ImageButton copyPhraseButton)
     {
         copyPhraseButton.setVisibility(View.VISIBLE);
-        voicePhraseButton.setVisibility(View.VISIBLE);
+        //hide speaker button if google TTS not available
+        if (!ttsManager.isGoogleTTSAvailable())
+        {
+            voicePhraseButton.setVisibility(View.GONE);
+        } else {
+            voicePhraseButton.setVisibility(View.VISIBLE);
+        }
         pronounciation.setVisibility(View.VISIBLE);
         travelPhrase.setVisibility(View.VISIBLE);
     }

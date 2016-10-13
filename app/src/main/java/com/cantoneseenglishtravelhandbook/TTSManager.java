@@ -13,10 +13,24 @@ public class TTSManager {
 
     public void init(Context context) {
         try {
-            mTts = new TextToSpeech(context, onInitListener);
+            mTts = new TextToSpeech(context, onInitListener, "com.google.android.tts");
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public boolean isGoogleTTSAvailable()
+    {
+        Boolean engineExist = false;
+        for (TextToSpeech.EngineInfo engines : mTts.getEngines()) {
+            if (engines.toString().equals("EngineInfo{name=com.google.android.tts}"))
+            {
+                engineExist = true;
+            }
+            Log.d("Engine Info " , engines.toString());
+        }
+
+        return engineExist;
     }
 
     private TextToSpeech.OnInitListener onInitListener = new TextToSpeech.OnInitListener() {
