@@ -37,6 +37,10 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.analytics.Tracker;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.analytics.FirebaseAnalytics.Event;
+import com.google.firebase.analytics.FirebaseAnalytics.Param;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -53,11 +57,18 @@ public class MainActivity extends AppCompatActivity
     LinearLayoutManager categoryLayoutManager;
     final Context context = this;
     private int MY_DATA_CHECK_CODE = 0;
+    private FirebaseAnalytics firebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Obtain the Firebase Analytics instance.
+        firebaseAnalytics = FirebaseAnalytics.getInstance(this);
+        //Sets whether analytics collection is enabled for this app on this device.
+        firebaseAnalytics.setAnalyticsCollectionEnabled(true);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);

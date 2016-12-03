@@ -1,14 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'danny'
+            keyPassword 'dannyko1'
+            storeFile file('C:/Users/Danny/AndroidStudioProjects/dannykey2.jks')
+            storePassword 'dannyko1'
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "24.0.0"
     defaultConfig {
         applicationId "com.cantoneseenglishtravelhandbook"
         minSdkVersion 14
         targetSdkVersion 24
-        versionCode 2
-        versionName "2.0"
+        versionCode 3
+        versionName "3.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -16,18 +24,21 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 }
 
 dependencies {
-
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.google.android.gms:play-services:9.6.1'
-    compile 'com.android.support:design:24.2.0'
-    compile 'com.google.android.gms:play-services-appindexing:9.4.0'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.6.1'
     compile 'com.squareup.picasso:picasso:2.5.0'
-    compile 'com.android.support:recyclerview-v7:24.2.0'
-    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.google.android.gms:play-services-analytics:9.6.1'
 }
+
+apply plugin: 'com.google.gms.google-services'

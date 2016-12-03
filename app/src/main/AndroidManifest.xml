@@ -37,6 +37,9 @@
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
 
     <!-- These permissions are strongly recommended and will result in higher performance -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
