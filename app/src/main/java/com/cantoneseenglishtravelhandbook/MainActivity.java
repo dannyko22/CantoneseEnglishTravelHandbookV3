@@ -264,10 +264,10 @@ public class MainActivity extends AppCompatActivity
 
             Intent intent = new Intent(Intent.ACTION_VIEW);
             //Try Google play
-            intent.setData(Uri.parse("market://details?id=com.cantoneseenglishtravelhandbook.app"));
+            intent.setData(Uri.parse("market://details?id=com.cantoneseenglishtravelhandbook"));
             if (!MyStartActivity(intent)) {
                 //Market (Google play) app seems not installed, let's try to open a webbrowser
-                intent.setData(Uri.parse("https://play.google.com/store/apps/details?com.cantoneseenglishtravelhandbook.app"));
+                intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.cantoneseenglishtravelhandbook&hl=en"));
                 if (!MyStartActivity(intent)) {
                     //Well if this also fails, we have run out of options, inform the user.
                     Toast.makeText(this, "Could not open Android market, please install the market app.", Toast.LENGTH_SHORT).show();
