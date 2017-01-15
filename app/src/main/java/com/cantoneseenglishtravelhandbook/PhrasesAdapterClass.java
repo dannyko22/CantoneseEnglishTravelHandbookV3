@@ -72,9 +72,7 @@ public class PhrasesAdapterClass extends ArrayAdapter {
 
         final LinearLayout phrasesLayout = (LinearLayout) row.findViewById(R.id.phrasesLayout);
 
-        ttsManager = new TTSManager();
 
-        ttsManager.init(context);
 
 
 
@@ -177,6 +175,10 @@ public class PhrasesAdapterClass extends ArrayAdapter {
 
         this.context = _context;
         this.travelPhraseData = _travelPhraseData;
+
+        ttsManager = new TTSManager();
+
+        ttsManager.init(context);
 
     }
 
