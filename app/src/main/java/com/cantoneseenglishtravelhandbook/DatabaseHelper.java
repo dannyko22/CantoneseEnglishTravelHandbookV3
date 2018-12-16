@@ -58,7 +58,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      */
     public DatabaseHelper(Context context) {
 
-        super(context, DB_NAME, null, 1);
+        super(context, DB_NAME, null, DATABASE_VERSION);
         this.myContext = context;
     }
 
@@ -160,6 +160,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         File myFile = myContext.getDatabasePath(DB_NAME);
         myDataBase = SQLiteDatabase.openDatabase(myFile.getPath(), null, SQLiteDatabase.OPEN_READONLY);
 
+        //myDataBase = SQLiteDatabase.openDatabase(myFile.getAbsolutePath(), null, SQLiteDatabase.OPEN_READONLY);
     }
 
     @Override
@@ -247,7 +248,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor cursor;
         Integer id = 0;
         ArrayList<TravelCategoryData> items = new ArrayList<TravelCategoryData>();
-        //String selectQuery = "SELECT DISTINCT Category FROM " + TABLE_TRAVELPHRASES;
+//        String selectQuery = "SELECT DISTINCT * FROM " + TABLE_TRAVELPHRASES;
+//        cursor = myDataBase.rawQuery(selectQuery,null);
 
         //SQLiteDatabase db = this.getReadableDatabase();
         cursor = myDataBase.query(TABLE_TRAVELPHRASES, new String[]{KEY_ID, CATEGORY, HOME_PHRASE, TRAVEL_PHRASE, PRONOUNCIATION_PHRASE, FILENAME}, null, null, CATEGORY, null, null);
