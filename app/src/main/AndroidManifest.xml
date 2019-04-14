@@ -39,6 +39,8 @@
         <activity android:name=".NotepadActivity" />
         <activity android:name=".activity_notepadrecycler" />
         <activity android:name=".about_me"></activity>
+
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
