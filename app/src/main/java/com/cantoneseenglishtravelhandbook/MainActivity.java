@@ -58,17 +58,12 @@ public class MainActivity extends AppCompatActivity
     LinearLayoutManager categoryLayoutManager;
     final Context context = this;
     private int MY_DATA_CHECK_CODE = 0;
-    //private FirebaseAnalytics firebaseAnalytics;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        // Obtain the Firebase Analytics instance.
-//        firebaseAnalytics = FirebaseAnalytics.getInstance(this);
-//        //Sets whether analytics collection is enabled for this app on this device.
-//        firebaseAnalytics.setAnalyticsCollectionEnabled(true);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -90,7 +85,7 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -127,7 +122,7 @@ public class MainActivity extends AppCompatActivity
         setupCategoryListView();
 
         isStoragePermissionGranted();
-        //initializeAdNetwork();
+        initializeAdNetwork();
 
         checkEngineExist(this);
 

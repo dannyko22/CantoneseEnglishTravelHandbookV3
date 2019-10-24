@@ -58,6 +58,12 @@ public class NotepadDatabaseHelper extends SQLiteOpenHelper {
         this.myContext = context;
     }
 
+    @Override
+    public void onOpen(SQLiteDatabase db) {
+        super.onOpen(db);
+        db.disableWriteAheadLogging();
+    }
+
     /**
      * Creates a empty database on the system and rewrites it with your own database.
      * */
@@ -72,7 +78,7 @@ public class NotepadDatabaseHelper extends SQLiteOpenHelper {
 //By calling this method and empty database will be created into the default system path
 //of your application so we are gonna be able to overwrite that database with our database.
             this.getReadableDatabase();
-
+            this.close();
             try {
                 File f = new File(DB_PATH);
                 if (!f.exists()) {
@@ -155,7 +161,7 @@ public class NotepadDatabaseHelper extends SQLiteOpenHelper {
         String myPath = DB_PATH + DB_NAME;
         File myFile = myContext.getDatabasePath(DB_NAME);
         myDataBase = SQLiteDatabase.openDatabase(myFile.getPath(), null, SQLiteDatabase.OPEN_READWRITE);
-
+        myDataBase.disableWriteAheadLogging();
     }
 
     @Override
